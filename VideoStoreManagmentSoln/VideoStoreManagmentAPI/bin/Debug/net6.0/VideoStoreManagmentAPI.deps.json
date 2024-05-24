@@ -9,6 +9,7 @@
       "VideoStoreManagmentAPI/1.0.0": {
         "dependencies": {
           "Microsoft.AspNetCore.Authentication.JwtBearer": "6.0.30",
+          "Microsoft.EntityFrameworkCore": "6.0.30",
           "Microsoft.EntityFrameworkCore.Design": "6.0.30",
           "Microsoft.EntityFrameworkCore.SqlServer": "6.0.30",
           "Microsoft.EntityFrameworkCore.Tools": "6.0.30",

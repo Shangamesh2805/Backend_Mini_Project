@@ -2,6 +2,7 @@
 {
     public class FeedBack
     {
+
         public int FeedbackId { get; set; }
 
         public decimal Rating { get; set; }

@@ -1,3 +1,6 @@
+using Microsoft.EntityFrameworkCore;
+using VideoStoreManagmentAPI.Contexts;
+
 namespace VideoStoreManagmentAPI
 {
     public class Program
@@ -14,6 +17,13 @@ namespace VideoStoreManagmentAPI
             builder.Services.AddSwaggerGen();
 
             var app = builder.Build();
+
+            #region contexts
+            builder.Services.AddDbContext<VideoStoreManagementContext>(
+                options => options.UseSqlServer(builder.Configuration.GetConnectionString("defaultConnection"))
+                );
+
+            #endregion
 
             // Configure the HTTP request pipeline.
             if (app.Environment.IsDevelopment())

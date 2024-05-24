@@ -6,7 +6,10 @@ namespace VideoStoreManagmentAPI.Contexts
 {
     public class VideoStoreManagementContext : DbContext
     {
-        public VideoStoreManagementContext(DbContextOptions<VideoStoreManagementContext> options) : base(options) { }
+        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+        {
+            optionsBuilder.UseSqlServer(@"Data source=353CBX3\\DEMOINSTANCE;Integrated Security=true;Initial catalog=VideoStoredb_Mini;");
+        }
 
         public DbSet<User> Users { get; set; }
         public DbSet<Cart> Carts { get; set; }
@@ -20,18 +23,52 @@ namespace VideoStoreManagmentAPI.Contexts
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            
+
             modelBuilder.Entity<User>().HasData(
-                new User { UserId = 1, Name = "Tojo", Age = 25, Membership = UserType.NormalMember,
-                    DeviceLimit = 1, DiscountFactor = 0 },
-                new User { UserId = 2, Name = "Tanjiro", Age = 30, Membership = UserType.GoldenMember, 
-                    DeviceLimit = 2, DiscountFactor = 2 }
+                new User
+                {
+                    UserId = 1,
+                    Name = "Tojo",
+                    Age = 25,
+                    Email="tojo@gmai.com",
+                    Membership = UserType.NormalMember,
+                    DeviceLimit = 1,
+                    DiscountFactor = 0
+                },
+                new User
+                {
+                    UserId = 2,
+                    Name = "Tanjiro",
+                    Age =17 ,
+                    Email= "tanjiro@gmail.com",
+                    Membership = UserType.GoldenMember,
+                    DeviceLimit = 2,
+                    DiscountFactor = 2
+                }
             );
             modelBuilder.Entity<Videos>().HasData(
-                new Videos { VideoId = 1, Title = "Inception", Genre = "Sci-Fi", VideoFormat = VideoFormat.DVD, Price = 9.99m, 
-                    Availability = true, Description = "A mind-bending thriller", PublisherId = 1 },
-                new Videos { VideoId = 2, Title = "The Matrix", Genre = "Action", VideoFormat = VideoFormat.BlueRay, Price = 14.99m, 
-                    Availability = true, Description = "A hacker discovers reality", PublisherId = 2 }
+                new Videos
+                {
+                    VideoId = 1,
+                    Title = "Inception",
+                    Genre = "Sci-Fi",
+                    VideoFormat = VideoFormat.DVD,
+                    Price = 9.99m,
+                    Availability = true,
+                    Description = "A mind-bending thriller",
+                    PublisherId = 1
+                },
+                new Videos
+                {
+                    VideoId = 2,
+                    Title = "The Matrix",
+                    Genre = "Action",
+                    VideoFormat = VideoFormat.BlueRay,
+                    Price = 14.99m,
+                    Availability = true,
+                    Description = "A hacker discovers reality",
+                    PublisherId = 2
+                }
             );
 
             modelBuilder.Entity<Publisher>().HasData(
@@ -65,7 +102,7 @@ namespace VideoStoreManagmentAPI.Contexts
 
             modelBuilder.Entity<Cart>()
              .HasOne(c => c.User)
-             .WithMany(u => u.Cart)
+             .WithMany()
              .HasForeignKey(c => c.UserId)
              .OnDelete(DeleteBehavior.Cascade);
 
@@ -93,7 +130,7 @@ namespace VideoStoreManagmentAPI.Contexts
                 .HasForeignKey(f => f.VideoId)
                 .OnDelete(DeleteBehavior.Cascade);
 
-            
+
         }
     }
 

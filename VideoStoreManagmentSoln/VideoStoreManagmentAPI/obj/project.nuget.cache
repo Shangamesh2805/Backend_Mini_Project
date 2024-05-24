@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "cHGpx1UZFlO5WvG4OHz+xrcgByse8Be7ba6U0Vfq9ujmEvnovqcvyVDOmJmnXhuBjWEf9g43PQn4B8PT8ICxkg==",
+  "dgSpecHash": "+gtM/Po18iGM1E00sEmysQSlVWz4hDP4/6u/ILeHHDy4Ae5uqGX4mCDzY3S6a3JHAhLCFYY4WRO6cImU+HuN/w==",
   "success": true,
-  "projectFilePath": "C:\\Users\\VC\\Desktop\\Task1\\Day29_Mini_Project\\VideoStoreManagmentSoln\\VideoStoreManagmentAPI\\VideoStoreManagmentAPI.csproj",
+  "projectFilePath": "C:\\Users\\VC\\Downloads\\Daily_progress\\Mini_Project\\VideoStoreManagmentSoln\\VideoStoreManagmentAPI\\VideoStoreManagmentAPI.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\VC\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\VC\\.nuget\\packages\\microsoft.aspnetcore.authentication.jwtbearer\\6.0.30\\microsoft.aspnetcore.authentication.jwtbearer.6.0.30.nupkg.sha512",

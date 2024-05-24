@@ -1,7 +1,10 @@
-﻿namespace VideoStoreManagmentAPI.Models
+﻿using System.ComponentModel.DataAnnotations;
+
+namespace VideoStoreManagmentAPI.Models
 {
     public class Videos
     {
+        [Key]
         public int VideoId { get; set; }
 
         public string Genre {  get; set; }
@@ -14,8 +17,8 @@
         public int PublisherId {  get; set; }
         public Publisher Publisher { get; set; }
 
-        public ICollection<FeedBack> Feedbacks { get; set; }
-        public ICollection<OrderDetails> OrderDetails { get; set; }
+        public ICollection<FeedBack>? Feedbacks { get; set; }
+        public ICollection<OrderDetails>? OrderDetails { get; set; }
     }
 
     public enum VideoFormat
