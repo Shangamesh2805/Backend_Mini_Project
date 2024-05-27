@@ -6,9 +6,13 @@ namespace VideoStoreManagmentAPI.Contexts
 {
     public class VideoStoreManagementContext : DbContext
     {
-        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+        //protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+        //{
+        //    optionsBuilder.UseSqlServer(@"Data source=353CBX3\\DEMOINSTANCE;Integrated Security=true;Initial catalog=VideoStoredb_Mini;");
+        //}
+        public VideoStoreManagementContext(DbContextOptions<VideoStoreManagementContext> options)
+           : base(options)
         {
-            optionsBuilder.UseSqlServer(@"Data source=353CBX3\\DEMOINSTANCE;Integrated Security=true;Initial catalog=VideoStoredb_Mini;");
         }
 
         public DbSet<User> Users { get; set; }
@@ -51,7 +55,7 @@ namespace VideoStoreManagmentAPI.Contexts
                 {
                     VideoId = 1,
                     Title = "Inception",
-                    Genre = "Sci-Fi",
+                    Genre = Genre.Sci_Fic,
                     VideoFormat = VideoFormat.DVD,
                     Price = 9.99m,
                     Availability = true,
@@ -62,7 +66,7 @@ namespace VideoStoreManagmentAPI.Contexts
                 {
                     VideoId = 2,
                     Title = "The Matrix",
-                    Genre = "Action",
+                    Genre = Genre.Action,
                     VideoFormat = VideoFormat.BlueRay,
                     Price = 14.99m,
                     Availability = true,

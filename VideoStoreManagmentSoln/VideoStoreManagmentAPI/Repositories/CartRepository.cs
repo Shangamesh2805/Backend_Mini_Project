@@ -1,8 +1,8 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using VideoStoreManagmentAPI.Contexts;
 using VideoStoreManagmentAPI.Exceptions;
-using VideoStoreManagmentAPI.Interfaces;
 using VideoStoreManagmentAPI.Models;
+using VideoStoreManagmentAPI.Repositories.Interfaces;
 
 namespace VideoStoreManagmentAPI.Repositories
 {
@@ -35,7 +35,10 @@ namespace VideoStoreManagmentAPI.Repositories
 
         public async Task<IEnumerable<Cart>> GetAllAsync()
         {
-            var result = await _context.Carts.ToListAsync();
+            var result = await _context.Carts
+                .Include(c => c.CartItems)
+                .ThenInclude(ci => ci.Video)
+                .ToListAsync();
             if (result.Count == 0)
             {
                 throw new CartEmpytyException();
@@ -45,7 +48,10 @@ namespace VideoStoreManagmentAPI.Repositories
 
         public async Task<Cart> GetByIdAsync(int key)
         {
-            var item = await GetByIdAsync(key);
+            var item = await _context.Carts
+                .Include(c => c.CartItems)
+                .ThenInclude(ci => ci.Video)
+                .FirstOrDefaultAsync(c => c.CartId == key);
             if (item != null)
             {
                 return item;

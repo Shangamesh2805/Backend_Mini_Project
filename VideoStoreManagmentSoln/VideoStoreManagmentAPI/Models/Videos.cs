@@ -7,7 +7,7 @@ namespace VideoStoreManagmentAPI.Models
         [Key]
         public int VideoId { get; set; }
 
-        public string Genre {  get; set; }
+        public Genre Genre {  get; set; }
         public string Title { get; set; }
         public string Description { get; set; }
 
@@ -27,4 +27,15 @@ namespace VideoStoreManagmentAPI.Models
         BlueRay
 
     }
+
+    public enum Genre
+    {
+        Sci_Fic,
+        Action,
+        Comedy,
+        Drama,
+        Bio_pic
+
+    }
+
 }

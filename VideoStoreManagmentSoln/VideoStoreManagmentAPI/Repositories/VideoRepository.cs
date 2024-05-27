@@ -1,28 +1,52 @@
-﻿using VideoStoreManagmentAPI.Interfaces;
+﻿using Microsoft.EntityFrameworkCore;
+using VideoStoreManagmentAPI.Contexts;
+using VideoStoreManagmentAPI.Exceptions;
 using VideoStoreManagmentAPI.Models;
+using VideoStoreManagmentAPI.Repositories.Interfaces;
 
 namespace VideoStoreManagmentAPI.Repositories
 {
     public class VideoRepository : IRepository<int, Videos>
     {
-        public Task<Videos> AddAsync(Videos item)
+        private readonly VideoStoreManagementContext _context;
+
+        public VideoRepository(VideoStoreManagementContext context)
         {
-            throw new NotImplementedException();
+            _context = context;
         }
 
-        public Task<Videos> Delete(int key)
+        public async Task<Videos> AddAsync(Videos item)
         {
-            throw new NotImplementedException();
+            _context.Videos.Add(item);
+            await _context.SaveChangesAsync();
+            return item;
         }
 
-        public Task<IEnumerable<Videos>> GetAllAsync()
+        public async Task<Videos> Delete(int key)
         {
-            throw new NotImplementedException();
+            var item = await GetByIdAsync(key);
+            if (item != null)
+            {
+                _context.Videos.Remove(item);
+                await _context.SaveChangesAsync();
+                return item;
+            }
+            throw new VideoNotFoundException();
         }
 
-        public Task<Videos> GetByIdAsync(int key)
+        public async Task<IEnumerable<Videos>> GetAllAsync()
         {
-            throw new NotImplementedException();
+            return await _context.Videos.ToListAsync();
+        }
+
+        public async Task<Videos> GetByIdAsync(int key)
+        {
+            var video = await GetByIdAsync(key);
+            if (video != null)
+            {
+                return video;
+            }
+            throw new VideoNotFoundException();
         }
 
         public Task SaveChangesAsync()
@@ -30,9 +54,18 @@ namespace VideoStoreManagmentAPI.Repositories
             throw new NotImplementedException();
         }
 
-        public Task<Videos> Update(Videos item)
+
+        public async Task<Videos> Update(Videos item)
         {
-            throw new NotImplementedException();
+            var existingVideo = await GetByIdAsync(item.VideoId);
+            if (existingVideo == null)
+            {
+                throw new KeyNotFoundException("Video not found");
+            }
+
+            _context.Entry(existingVideo).CurrentValues.SetValues(item);
+            await _context.SaveChangesAsync();
+            return existingVideo;
         }
     }
 }
