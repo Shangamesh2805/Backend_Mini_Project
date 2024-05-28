@@ -19,6 +19,7 @@ namespace VideoStoreManagmentAPI.Controllers
 
         // Accessible by all users
         [HttpGet]
+        [Authorize]
         public async Task<ActionResult<IEnumerable<Videos>>> GetAll()
         {
             return Ok(await _videoService.GetAllVideosAsync());
@@ -26,6 +27,7 @@ namespace VideoStoreManagmentAPI.Controllers
 
         // Accessible by all users
         [HttpGet("{id}")]
+        [Authorize]
         public async Task<ActionResult<Videos>> GetById(int id)
         {
             var video = await _videoService.GetVideoByIdAsync(id);

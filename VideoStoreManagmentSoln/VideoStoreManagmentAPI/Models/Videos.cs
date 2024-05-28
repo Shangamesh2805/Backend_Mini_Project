@@ -1,4 +1,5 @@
 ﻿using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace VideoStoreManagmentAPI.Models
 {
@@ -14,6 +15,10 @@ namespace VideoStoreManagmentAPI.Models
         public bool Availability { get; set; }
         public VideoFormat VideoFormat { get; set; }
         public decimal Price {  get; set; }
+       
+        public int VideoCount { get; set; } = 5;
+
+        [ForeignKey("PublisherId")]
         public int PublisherId {  get; set; }
         public Publisher Publisher { get; set; }
 
@@ -34,7 +39,14 @@ namespace VideoStoreManagmentAPI.Models
         Action,
         Comedy,
         Drama,
-        Bio_pic
+        Bio_pic,
+        Animation,
+        Marvel,
+        Disney,
+        DC,
+        Historical,
+        Horror,
+        Thriller
 
     }
 

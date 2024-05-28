@@ -8,6 +8,7 @@ namespace VideoStoreManagmentAPI.Models
         [Key]
         public int PublisherId { get; set; }
         public string PublisherName { get; set; }
+        public string Email { get; set; }
         public ICollection<Videos> Videos { get; set; }= new List<Videos>();
     }
 }

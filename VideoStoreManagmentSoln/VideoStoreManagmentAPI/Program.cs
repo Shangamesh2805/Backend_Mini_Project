@@ -5,6 +5,7 @@ using VideoStoreManagmentAPI.Models;
 using VideoStoreManagmentAPI.Repositories.Interfaces;
 using VideoStoreManagmentAPI.Repositories;
 using VideoStoreManagmentAPI.Services;
+using VideoStoreManagmentAPI.Services.Interfaces;
 
 namespace VideoStoreManagmentAPI
 {
@@ -44,10 +45,15 @@ namespace VideoStoreManagmentAPI
             builder.Services.AddScoped<IRepository<int, Videos>, VideoRepository>();
             builder.Services.AddScoped<IRepository<int, Publisher>, PublisherRepository>();
 
-           
+            
+
+
 
             // Add services
             builder.Services.AddScoped<IVideoService, VideoService>();
+            builder.Services.AddScoped<ICartServices, CartServices>();
+            
+            
 
             // authorization
             builder.Services.AddAuthorization(options =>

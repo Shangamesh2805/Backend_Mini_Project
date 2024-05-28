@@ -1,4 +1,5 @@
 ﻿using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace VideoStoreManagmentAPI.Models
 {
@@ -6,6 +7,7 @@ namespace VideoStoreManagmentAPI.Models
     {
         [Key]
         public int OrderId { get; set; }
+        [ForeignKey("UserId")]
         public int UserId { get; set; }
         public User User { get; set; }
         public DateTime OrderDate { get; set; }
