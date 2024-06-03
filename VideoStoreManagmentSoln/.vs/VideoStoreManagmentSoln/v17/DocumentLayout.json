@@ -3,6 +3,7 @@
   "WorkspaceRootPath": "C:\\Users\\VC\\Downloads\\Daily_progress\\Mini_Project\\VideoStoreManagmentSoln\\",
   "Documents": [
     {
+<<<<<<< HEAD
       "AbsoluteMoniker": "D:0:0:{2FF2F1F2-E920-4B40-AE75-EEAA26DF204D}|Testing\\Testing.csproj|c:\\users\\vc\\downloads\\daily_progress\\mini_project\\videostoremanagmentsoln\\testing\\repositorytests\\cartitemrepositorytest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{2FF2F1F2-E920-4B40-AE75-EEAA26DF204D}|Testing\\Testing.csproj|solutionrelative:testing\\repositorytests\\cartitemrepositorytest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -172,23 +173,105 @@
     {
       "AbsoluteMoniker": "D:0:0:{319F031C-BFB1-49C1-8543-44CFE7AB404F}|VideoStoreManagmentAPI\\VideoStoreManagmentAPI.csproj|c:\\users\\vc\\downloads\\daily_progress\\mini_project\\videostoremanagmentsoln\\videostoremanagmentapi\\repositories\\interfaces\\irepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{319F031C-BFB1-49C1-8543-44CFE7AB404F}|VideoStoreManagmentAPI\\VideoStoreManagmentAPI.csproj|solutionrelative:videostoremanagmentapi\\repositories\\interfaces\\irepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+=======
+      "AbsoluteMoniker": "D:0:0:{319F031C-BFB1-49C1-8543-44CFE7AB404F}|VideoStoreManagmentAPI\\VideoStoreManagmentAPI.csproj|c:\\users\\vc\\downloads\\daily_progress\\mini_project\\videostoremanagmentsoln\\videostoremanagmentapi\\services\\userservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{319F031C-BFB1-49C1-8543-44CFE7AB404F}|VideoStoreManagmentAPI\\VideoStoreManagmentAPI.csproj|solutionrelative:videostoremanagmentapi\\services\\userservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{319F031C-BFB1-49C1-8543-44CFE7AB404F}|VideoStoreManagmentAPI\\VideoStoreManagmentAPI.csproj|c:\\users\\vc\\downloads\\daily_progress\\mini_project\\videostoremanagmentsoln\\videostoremanagmentapi\\services\\interfaces\\itokenservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{319F031C-BFB1-49C1-8543-44CFE7AB404F}|VideoStoreManagmentAPI\\VideoStoreManagmentAPI.csproj|solutionrelative:videostoremanagmentapi\\services\\interfaces\\itokenservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{319F031C-BFB1-49C1-8543-44CFE7AB404F}|VideoStoreManagmentAPI\\VideoStoreManagmentAPI.csproj|c:\\users\\vc\\downloads\\daily_progress\\mini_project\\videostoremanagmentsoln\\videostoremanagmentapi\\services\\interfaces\\iuserservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{319F031C-BFB1-49C1-8543-44CFE7AB404F}|VideoStoreManagmentAPI\\VideoStoreManagmentAPI.csproj|solutionrelative:videostoremanagmentapi\\services\\interfaces\\iuserservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{319F031C-BFB1-49C1-8543-44CFE7AB404F}|VideoStoreManagmentAPI\\VideoStoreManagmentAPI.csproj|c:\\users\\vc\\downloads\\daily_progress\\mini_project\\videostoremanagmentsoln\\videostoremanagmentapi\\models\\dtos\\loginreturndto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{319F031C-BFB1-49C1-8543-44CFE7AB404F}|VideoStoreManagmentAPI\\VideoStoreManagmentAPI.csproj|solutionrelative:videostoremanagmentapi\\models\\dtos\\loginreturndto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{319F031C-BFB1-49C1-8543-44CFE7AB404F}|VideoStoreManagmentAPI\\VideoStoreManagmentAPI.csproj|c:\\users\\vc\\downloads\\daily_progress\\mini_project\\videostoremanagmentsoln\\videostoremanagmentapi\\controllers\\cartitemscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{319F031C-BFB1-49C1-8543-44CFE7AB404F}|VideoStoreManagmentAPI\\VideoStoreManagmentAPI.csproj|solutionrelative:videostoremanagmentapi\\controllers\\cartitemscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{319F031C-BFB1-49C1-8543-44CFE7AB404F}|VideoStoreManagmentAPI\\VideoStoreManagmentAPI.csproj|c:\\users\\vc\\downloads\\daily_progress\\mini_project\\videostoremanagmentsoln\\videostoremanagmentapi\\services\\cartitemservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{319F031C-BFB1-49C1-8543-44CFE7AB404F}|VideoStoreManagmentAPI\\VideoStoreManagmentAPI.csproj|solutionrelative:videostoremanagmentapi\\services\\cartitemservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{319F031C-BFB1-49C1-8543-44CFE7AB404F}|VideoStoreManagmentAPI\\VideoStoreManagmentAPI.csproj|c:\\users\\vc\\downloads\\daily_progress\\mini_project\\videostoremanagmentsoln\\videostoremanagmentapi\\services\\interfaces\\icartitemservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{319F031C-BFB1-49C1-8543-44CFE7AB404F}|VideoStoreManagmentAPI\\VideoStoreManagmentAPI.csproj|solutionrelative:videostoremanagmentapi\\services\\interfaces\\icartitemservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{319F031C-BFB1-49C1-8543-44CFE7AB404F}|VideoStoreManagmentAPI\\VideoStoreManagmentAPI.csproj|c:\\users\\vc\\downloads\\daily_progress\\mini_project\\videostoremanagmentsoln\\videostoremanagmentapi\\controllers\\orderdetailscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{319F031C-BFB1-49C1-8543-44CFE7AB404F}|VideoStoreManagmentAPI\\VideoStoreManagmentAPI.csproj|solutionrelative:videostoremanagmentapi\\controllers\\orderdetailscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{319F031C-BFB1-49C1-8543-44CFE7AB404F}|VideoStoreManagmentAPI\\VideoStoreManagmentAPI.csproj|c:\\users\\vc\\downloads\\daily_progress\\mini_project\\videostoremanagmentsoln\\videostoremanagmentapi\\services\\orderdetailservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{319F031C-BFB1-49C1-8543-44CFE7AB404F}|VideoStoreManagmentAPI\\VideoStoreManagmentAPI.csproj|solutionrelative:videostoremanagmentapi\\services\\orderdetailservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{319F031C-BFB1-49C1-8543-44CFE7AB404F}|VideoStoreManagmentAPI\\VideoStoreManagmentAPI.csproj|c:\\users\\vc\\downloads\\daily_progress\\mini_project\\videostoremanagmentsoln\\videostoremanagmentapi\\services\\interfaces\\iorderdetailservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{319F031C-BFB1-49C1-8543-44CFE7AB404F}|VideoStoreManagmentAPI\\VideoStoreManagmentAPI.csproj|solutionrelative:videostoremanagmentapi\\services\\interfaces\\iorderdetailservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{319F031C-BFB1-49C1-8543-44CFE7AB404F}|VideoStoreManagmentAPI\\VideoStoreManagmentAPI.csproj|c:\\users\\vc\\downloads\\daily_progress\\mini_project\\videostoremanagmentsoln\\videostoremanagmentapi\\controllers\\ordercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{319F031C-BFB1-49C1-8543-44CFE7AB404F}|VideoStoreManagmentAPI\\VideoStoreManagmentAPI.csproj|solutionrelative:videostoremanagmentapi\\controllers\\ordercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{319F031C-BFB1-49C1-8543-44CFE7AB404F}|VideoStoreManagmentAPI\\VideoStoreManagmentAPI.csproj|c:\\users\\vc\\downloads\\daily_progress\\mini_project\\videostoremanagmentsoln\\videostoremanagmentapi\\services\\orderservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{319F031C-BFB1-49C1-8543-44CFE7AB404F}|VideoStoreManagmentAPI\\VideoStoreManagmentAPI.csproj|solutionrelative:videostoremanagmentapi\\services\\orderservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{319F031C-BFB1-49C1-8543-44CFE7AB404F}|VideoStoreManagmentAPI\\VideoStoreManagmentAPI.csproj|c:\\users\\vc\\downloads\\daily_progress\\mini_project\\videostoremanagmentsoln\\videostoremanagmentapi\\services\\interfaces\\iorderservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{319F031C-BFB1-49C1-8543-44CFE7AB404F}|VideoStoreManagmentAPI\\VideoStoreManagmentAPI.csproj|solutionrelative:videostoremanagmentapi\\services\\interfaces\\iorderservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{319F031C-BFB1-49C1-8543-44CFE7AB404F}|VideoStoreManagmentAPI\\VideoStoreManagmentAPI.csproj|c:\\users\\vc\\downloads\\daily_progress\\mini_project\\videostoremanagmentsoln\\videostoremanagmentapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{319F031C-BFB1-49C1-8543-44CFE7AB404F}|VideoStoreManagmentAPI\\VideoStoreManagmentAPI.csproj|solutionrelative:videostoremanagmentapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{319F031C-BFB1-49C1-8543-44CFE7AB404F}|VideoStoreManagmentAPI\\VideoStoreManagmentAPI.csproj|c:\\users\\vc\\downloads\\daily_progress\\mini_project\\videostoremanagmentsoln\\videostoremanagmentapi\\models\\videos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{319F031C-BFB1-49C1-8543-44CFE7AB404F}|VideoStoreManagmentAPI\\VideoStoreManagmentAPI.csproj|solutionrelative:videostoremanagmentapi\\models\\videos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{319F031C-BFB1-49C1-8543-44CFE7AB404F}|VideoStoreManagmentAPI\\VideoStoreManagmentAPI.csproj|c:\\users\\vc\\downloads\\daily_progress\\mini_project\\videostoremanagmentsoln\\videostoremanagmentapi\\models\\orderdetails.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{319F031C-BFB1-49C1-8543-44CFE7AB404F}|VideoStoreManagmentAPI\\VideoStoreManagmentAPI.csproj|solutionrelative:videostoremanagmentapi\\models\\orderdetails.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{319F031C-BFB1-49C1-8543-44CFE7AB404F}|VideoStoreManagmentAPI\\VideoStoreManagmentAPI.csproj|c:\\users\\vc\\downloads\\daily_progress\\mini_project\\videostoremanagmentsoln\\videostoremanagmentapi\\models\\orders.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{319F031C-BFB1-49C1-8543-44CFE7AB404F}|VideoStoreManagmentAPI\\VideoStoreManagmentAPI.csproj|solutionrelative:videostoremanagmentapi\\models\\orders.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{319F031C-BFB1-49C1-8543-44CFE7AB404F}|VideoStoreManagmentAPI\\VideoStoreManagmentAPI.csproj|c:\\users\\vc\\downloads\\daily_progress\\mini_project\\videostoremanagmentsoln\\videostoremanagmentapi\\controllers\\videocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{319F031C-BFB1-49C1-8543-44CFE7AB404F}|VideoStoreManagmentAPI\\VideoStoreManagmentAPI.csproj|solutionrelative:videostoremanagmentapi\\controllers\\videocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{319F031C-BFB1-49C1-8543-44CFE7AB404F}|VideoStoreManagmentAPI\\VideoStoreManagmentAPI.csproj|c:\\users\\vc\\downloads\\daily_progress\\mini_project\\videostoremanagmentsoln\\videostoremanagmentapi\\services\\tokenservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{319F031C-BFB1-49C1-8543-44CFE7AB404F}|VideoStoreManagmentAPI\\VideoStoreManagmentAPI.csproj|solutionrelative:videostoremanagmentapi\\services\\tokenservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{319F031C-BFB1-49C1-8543-44CFE7AB404F}|VideoStoreManagmentAPI\\VideoStoreManagmentAPI.csproj|c:\\users\\vc\\downloads\\daily_progress\\mini_project\\videostoremanagmentsoln\\videostoremanagmentapi\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{319F031C-BFB1-49C1-8543-44CFE7AB404F}|VideoStoreManagmentAPI\\VideoStoreManagmentAPI.csproj|solutionrelative:videostoremanagmentapi\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{319F031C-BFB1-49C1-8543-44CFE7AB404F}|VideoStoreManagmentAPI\\VideoStoreManagmentAPI.csproj|c:\\users\\vc\\downloads\\daily_progress\\mini_project\\videostoremanagmentsoln\\videostoremanagmentapi\\models\\dtos\\publisherlogindto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{319F031C-BFB1-49C1-8543-44CFE7AB404F}|VideoStoreManagmentAPI\\VideoStoreManagmentAPI.csproj|solutionrelative:videostoremanagmentapi\\models\\dtos\\publisherlogindto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+>>>>>>> bd4204c8c946b21398d905657cee916787fdeef7
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{319F031C-BFB1-49C1-8543-44CFE7AB404F}|VideoStoreManagmentAPI\\VideoStoreManagmentAPI.csproj|c:\\users\\vc\\downloads\\daily_progress\\mini_project\\videostoremanagmentsoln\\videostoremanagmentapi\\services\\interfaces\\itokenservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{319F031C-BFB1-49C1-8543-44CFE7AB404F}|VideoStoreManagmentAPI\\VideoStoreManagmentAPI.csproj|solutionrelative:videostoremanagmentapi\\services\\interfaces\\itokenservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+<<<<<<< HEAD
+      "AbsoluteMoniker": "D:0:0:{319F031C-BFB1-49C1-8543-44CFE7AB404F}|VideoStoreManagmentAPI\\VideoStoreManagmentAPI.csproj|c:\\users\\vc\\downloads\\daily_progress\\mini_project\\videostoremanagmentsoln\\videostoremanagmentapi\\models\\dtos\\loginreturndto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{319F031C-BFB1-49C1-8543-44CFE7AB404F}|VideoStoreManagmentAPI\\VideoStoreManagmentAPI.csproj|solutionrelative:videostoremanagmentapi\\models\\dtos\\loginreturndto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{319F031C-BFB1-49C1-8543-44CFE7AB404F}|VideoStoreManagmentAPI\\VideoStoreManagmentAPI.csproj|c:\\users\\vc\\downloads\\daily_progress\\mini_project\\videostoremanagmentsoln\\videostoremanagmentapi\\services\\cartitemservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{319F031C-BFB1-49C1-8543-44CFE7AB404F}|VideoStoreManagmentAPI\\VideoStoreManagmentAPI.csproj|solutionrelative:videostoremanagmentapi\\services\\cartitemservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+=======
+      "AbsoluteMoniker": "D:0:0:{319F031C-BFB1-49C1-8543-44CFE7AB404F}|VideoStoreManagmentAPI\\VideoStoreManagmentAPI.csproj|c:\\users\\vc\\downloads\\daily_progress\\mini_project\\videostoremanagmentsoln\\videostoremanagmentapi\\services\\interfaces\\ivideoservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{319F031C-BFB1-49C1-8543-44CFE7AB404F}|VideoStoreManagmentAPI\\VideoStoreManagmentAPI.csproj|solutionrelative:videostoremanagmentapi\\services\\interfaces\\ivideoservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+>>>>>>> bd4204c8c946b21398d905657cee916787fdeef7
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\VC\\Downloads\\Daily_progress\\Day26\\EmployeeRequestTrackerSolution\\EmployeeRequestTrackerAPI\\Services\\TokenService.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+<<<<<<< HEAD
       "AbsoluteMoniker": "D:0:0:{319F031C-BFB1-49C1-8543-44CFE7AB404F}|VideoStoreManagmentAPI\\VideoStoreManagmentAPI.csproj|c:\\users\\vc\\downloads\\daily_progress\\mini_project\\videostoremanagmentsoln\\videostoremanagmentapi\\exceptions\\unauthorizeduserexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{319F031C-BFB1-49C1-8543-44CFE7AB404F}|VideoStoreManagmentAPI\\VideoStoreManagmentAPI.csproj|solutionrelative:videostoremanagmentapi\\exceptions\\unauthorizeduserexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -223,10 +306,33 @@
     {
       "AbsoluteMoniker": "D:0:0:{319F031C-BFB1-49C1-8543-44CFE7AB404F}|VideoStoreManagmentAPI\\VideoStoreManagmentAPI.csproj|c:\\users\\vc\\downloads\\daily_progress\\mini_project\\videostoremanagmentsoln\\videostoremanagmentapi\\models\\orderdetails.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{319F031C-BFB1-49C1-8543-44CFE7AB404F}|VideoStoreManagmentAPI\\VideoStoreManagmentAPI.csproj|solutionrelative:videostoremanagmentapi\\models\\orderdetails.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+=======
+      "AbsoluteMoniker": "D:0:0:{319F031C-BFB1-49C1-8543-44CFE7AB404F}|VideoStoreManagmentAPI\\VideoStoreManagmentAPI.csproj|c:\\users\\vc\\downloads\\daily_progress\\mini_project\\videostoremanagmentsoln\\videostoremanagmentapi\\models\\dtos\\publisherregisterdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{319F031C-BFB1-49C1-8543-44CFE7AB404F}|VideoStoreManagmentAPI\\VideoStoreManagmentAPI.csproj|solutionrelative:videostoremanagmentapi\\models\\dtos\\publisherregisterdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{319F031C-BFB1-49C1-8543-44CFE7AB404F}|VideoStoreManagmentAPI\\VideoStoreManagmentAPI.csproj|c:\\users\\vc\\downloads\\daily_progress\\mini_project\\videostoremanagmentsoln\\videostoremanagmentapi\\models\\publisher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{319F031C-BFB1-49C1-8543-44CFE7AB404F}|VideoStoreManagmentAPI\\VideoStoreManagmentAPI.csproj|solutionrelative:videostoremanagmentapi\\models\\publisher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{319F031C-BFB1-49C1-8543-44CFE7AB404F}|VideoStoreManagmentAPI\\VideoStoreManagmentAPI.csproj|c:\\users\\vc\\downloads\\daily_progress\\mini_project\\videostoremanagmentsoln\\videostoremanagmentapi\\controllers\\cartcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{319F031C-BFB1-49C1-8543-44CFE7AB404F}|VideoStoreManagmentAPI\\VideoStoreManagmentAPI.csproj|solutionrelative:videostoremanagmentapi\\controllers\\cartcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+>>>>>>> bd4204c8c946b21398d905657cee916787fdeef7
     },
     {
       "AbsoluteMoniker": "D:0:0:{319F031C-BFB1-49C1-8543-44CFE7AB404F}|VideoStoreManagmentAPI\\VideoStoreManagmentAPI.csproj|c:\\users\\vc\\downloads\\daily_progress\\mini_project\\videostoremanagmentsoln\\videostoremanagmentapi\\services\\interfaces\\icartservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{319F031C-BFB1-49C1-8543-44CFE7AB404F}|VideoStoreManagmentAPI\\VideoStoreManagmentAPI.csproj|solutionrelative:videostoremanagmentapi\\services\\interfaces\\icartservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+<<<<<<< HEAD
+=======
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{319F031C-BFB1-49C1-8543-44CFE7AB404F}|VideoStoreManagmentAPI\\VideoStoreManagmentAPI.csproj|c:\\users\\vc\\downloads\\daily_progress\\mini_project\\videostoremanagmentsoln\\videostoremanagmentapi\\models\\dtos\\authresponsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{319F031C-BFB1-49C1-8543-44CFE7AB404F}|VideoStoreManagmentAPI\\VideoStoreManagmentAPI.csproj|solutionrelative:videostoremanagmentapi\\models\\dtos\\authresponsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{319F031C-BFB1-49C1-8543-44CFE7AB404F}|VideoStoreManagmentAPI\\VideoStoreManagmentAPI.csproj|c:\\users\\vc\\downloads\\daily_progress\\mini_project\\videostoremanagmentsoln\\videostoremanagmentapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{319F031C-BFB1-49C1-8543-44CFE7AB404F}|VideoStoreManagmentAPI\\VideoStoreManagmentAPI.csproj|solutionrelative:videostoremanagmentapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+>>>>>>> bd4204c8c946b21398d905657cee916787fdeef7
     }
   ],
   "DocumentGroupContainers": [
@@ -236,7 +342,11 @@
       "DocumentGroups": [
         {
           "DockedHeight": 200,
+<<<<<<< HEAD
           "SelectedChildIndex": 3,
+=======
+          "SelectedChildIndex": 1,
+>>>>>>> bd4204c8c946b21398d905657cee916787fdeef7
           "Children": [
             {
               "$type": "Document",
@@ -271,6 +381,7 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+<<<<<<< HEAD
               "Title": "CartItemRepositoryTest.cs",
               "DocumentMoniker": "C:\\Users\\VC\\Downloads\\Daily_progress\\Mini_Project\\VideoStoreManagmentSoln\\Testing\\RepositoryTests\\CartItemRepositoryTest.cs",
               "RelativeDocumentMoniker": "Testing\\RepositoryTests\\CartItemRepositoryTest.cs",
@@ -279,10 +390,21 @@
               "ViewState": "AQIAAAkAAAAAAAAAAAAAAA4AAAAaAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-03T03:16:09.948Z",
+=======
+              "Title": "UserServices.cs",
+              "DocumentMoniker": "C:\\Users\\VC\\Downloads\\Daily_progress\\Mini_Project\\VideoStoreManagmentSoln\\VideoStoreManagmentAPI\\Services\\UserServices.cs",
+              "RelativeDocumentMoniker": "VideoStoreManagmentAPI\\Services\\UserServices.cs",
+              "ToolTip": "C:\\Users\\VC\\Downloads\\Daily_progress\\Mini_Project\\VideoStoreManagmentSoln\\VideoStoreManagmentAPI\\Services\\UserServices.cs",
+              "RelativeToolTip": "VideoStoreManagmentAPI\\Services\\UserServices.cs",
+              "ViewState": "AQIAAD8AAAAAAAAAAAAqwEoAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-28T16:26:02.604Z",
+>>>>>>> bd4204c8c946b21398d905657cee916787fdeef7
               "EditorCaption": ""
             },
             {
               "$type": "Document",
+<<<<<<< HEAD
               "DocumentIndex": 3,
               "Title": "UnitTest1.cs",
               "DocumentMoniker": "C:\\Users\\VC\\Downloads\\Daily_progress\\Mini_Project\\VideoStoreManagmentSoln\\Testing\\UnitTest1.cs",
@@ -292,10 +414,22 @@
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-03T03:13:35.644Z",
+=======
+              "DocumentIndex": 1,
+              "Title": "IUserServices.cs",
+              "DocumentMoniker": "C:\\Users\\VC\\Downloads\\Daily_progress\\Mini_Project\\VideoStoreManagmentSoln\\VideoStoreManagmentAPI\\Services\\Interfaces\\IUserServices.cs",
+              "RelativeDocumentMoniker": "VideoStoreManagmentAPI\\Services\\Interfaces\\IUserServices.cs",
+              "ToolTip": "C:\\Users\\VC\\Downloads\\Daily_progress\\Mini_Project\\VideoStoreManagmentSoln\\VideoStoreManagmentAPI\\Services\\Interfaces\\IUserServices.cs",
+              "RelativeToolTip": "VideoStoreManagmentAPI\\Services\\Interfaces\\IUserServices.cs",
+              "ViewState": "AQIAAAgAAAAAAAAAAAAAwA8AAAAfAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-28T16:25:08.772Z",
+>>>>>>> bd4204c8c946b21398d905657cee916787fdeef7
               "EditorCaption": ""
             },
             {
               "$type": "Document",
+<<<<<<< HEAD
               "DocumentIndex": 4,
               "Title": "UnitTest1.cs",
               "DocumentMoniker": "C:\\Users\\VC\\Downloads\\Daily_progress\\Mini_Project\\Testing\\VideoStoreManagmentAPI\\UnitTest1.cs",
@@ -316,10 +450,88 @@
               "ViewState": "AQIAAAkAAAAAAAAAAAAAACwAAAAHAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-03T02:50:19.244Z"
+=======
+              "DocumentIndex": 2,
+              "Title": "CartItemsController.cs",
+              "DocumentMoniker": "C:\\Users\\VC\\Downloads\\Daily_progress\\Mini_Project\\VideoStoreManagmentSoln\\VideoStoreManagmentAPI\\Controllers\\CartItemsController.cs",
+              "RelativeDocumentMoniker": "VideoStoreManagmentAPI\\Controllers\\CartItemsController.cs",
+              "ToolTip": "C:\\Users\\VC\\Downloads\\Daily_progress\\Mini_Project\\VideoStoreManagmentSoln\\VideoStoreManagmentAPI\\Controllers\\CartItemsController.cs",
+              "RelativeToolTip": "VideoStoreManagmentAPI\\Controllers\\CartItemsController.cs",
+              "ViewState": "AQIAAC8AAAAAAAAAAAAgwEIAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-28T10:34:22.748Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "OrderDetailsController.cs",
+              "DocumentMoniker": "C:\\Users\\VC\\Downloads\\Daily_progress\\Mini_Project\\VideoStoreManagmentSoln\\VideoStoreManagmentAPI\\Controllers\\OrderDetailsController.cs",
+              "RelativeDocumentMoniker": "VideoStoreManagmentAPI\\Controllers\\OrderDetailsController.cs",
+              "ToolTip": "C:\\Users\\VC\\Downloads\\Daily_progress\\Mini_Project\\VideoStoreManagmentSoln\\VideoStoreManagmentAPI\\Controllers\\OrderDetailsController.cs",
+              "RelativeToolTip": "VideoStoreManagmentAPI\\Controllers\\OrderDetailsController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAEAAAAfAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-28T09:06:02.289Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "OrderDetailServices.cs",
+              "DocumentMoniker": "C:\\Users\\VC\\Downloads\\Daily_progress\\Mini_Project\\VideoStoreManagmentSoln\\VideoStoreManagmentAPI\\Services\\OrderDetailServices.cs",
+              "RelativeDocumentMoniker": "VideoStoreManagmentAPI\\Services\\OrderDetailServices.cs",
+              "ToolTip": "C:\\Users\\VC\\Downloads\\Daily_progress\\Mini_Project\\VideoStoreManagmentSoln\\VideoStoreManagmentAPI\\Services\\OrderDetailServices.cs",
+              "RelativeToolTip": "VideoStoreManagmentAPI\\Services\\OrderDetailServices.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-28T09:04:07.135Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "IOrderDetailService.cs",
+              "DocumentMoniker": "C:\\Users\\VC\\Downloads\\Daily_progress\\Mini_Project\\VideoStoreManagmentSoln\\VideoStoreManagmentAPI\\Services\\Interfaces\\IOrderDetailService.cs",
+              "RelativeDocumentMoniker": "VideoStoreManagmentAPI\\Services\\Interfaces\\IOrderDetailService.cs",
+              "ToolTip": "C:\\Users\\VC\\Downloads\\Daily_progress\\Mini_Project\\VideoStoreManagmentSoln\\VideoStoreManagmentAPI\\Services\\Interfaces\\IOrderDetailService.cs",
+              "RelativeToolTip": "VideoStoreManagmentAPI\\Services\\Interfaces\\IOrderDetailService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAABTAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-28T06:24:36.533Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "CartItemservices.cs",
+              "DocumentMoniker": "C:\\Users\\VC\\Downloads\\Daily_progress\\Mini_Project\\VideoStoreManagmentSoln\\VideoStoreManagmentAPI\\Services\\CartItemservices.cs",
+              "RelativeDocumentMoniker": "VideoStoreManagmentAPI\\Services\\CartItemservices.cs",
+              "ToolTip": "C:\\Users\\VC\\Downloads\\Daily_progress\\Mini_Project\\VideoStoreManagmentSoln\\VideoStoreManagmentAPI\\Services\\CartItemservices.cs",
+              "RelativeToolTip": "VideoStoreManagmentAPI\\Services\\CartItemservices.cs",
+              "ViewState": "AQIAABcAAAAAAAAAAAA3wCkAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-28T04:30:50.829Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ICartItemService.cs",
+              "DocumentMoniker": "C:\\Users\\VC\\Downloads\\Daily_progress\\Mini_Project\\VideoStoreManagmentSoln\\VideoStoreManagmentAPI\\Services\\Interfaces\\ICartItemService.cs",
+              "RelativeDocumentMoniker": "VideoStoreManagmentAPI\\Services\\Interfaces\\ICartItemService.cs",
+              "ToolTip": "C:\\Users\\VC\\Downloads\\Daily_progress\\Mini_Project\\VideoStoreManagmentSoln\\VideoStoreManagmentAPI\\Services\\Interfaces\\ICartItemService.cs",
+              "RelativeToolTip": "VideoStoreManagmentAPI\\Services\\Interfaces\\ICartItemService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-28T04:30:29.399Z",
+              "EditorCaption": ""
+>>>>>>> bd4204c8c946b21398d905657cee916787fdeef7
             },
             {
               "$type": "Document",
               "DocumentIndex": 8,
+<<<<<<< HEAD
               "Title": "IFeedBackService.cs",
               "DocumentMoniker": "C:\\Users\\VC\\Downloads\\Daily_progress\\Mini_Project\\VideoStoreManagmentSoln\\VideoStoreManagmentAPI\\Services\\Interfaces\\IFeedBackService.cs",
               "RelativeDocumentMoniker": "VideoStoreManagmentAPI\\Services\\Interfaces\\IFeedBackService.cs",
@@ -364,10 +576,22 @@
               "ViewState": "AQIAACgAAAAAAAAAAAAmwDYAAAAlAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-03T02:57:27.748Z"
+=======
+              "Title": "OrderController.cs",
+              "DocumentMoniker": "C:\\Users\\VC\\Downloads\\Daily_progress\\Mini_Project\\VideoStoreManagmentSoln\\VideoStoreManagmentAPI\\Controllers\\OrderController.cs",
+              "RelativeDocumentMoniker": "VideoStoreManagmentAPI\\Controllers\\OrderController.cs",
+              "ToolTip": "C:\\Users\\VC\\Downloads\\Daily_progress\\Mini_Project\\VideoStoreManagmentSoln\\VideoStoreManagmentAPI\\Controllers\\OrderController.cs",
+              "RelativeToolTip": "VideoStoreManagmentAPI\\Controllers\\OrderController.cs",
+              "ViewState": "AQIAABsAAAAAAAAAAAAUwCwAAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-28T08:42:34.728Z",
+              "EditorCaption": ""
+>>>>>>> bd4204c8c946b21398d905657cee916787fdeef7
             },
             {
               "$type": "Document",
               "DocumentIndex": 10,
+<<<<<<< HEAD
               "Title": "FeedBackRepository.cs",
               "DocumentMoniker": "C:\\Users\\VC\\Downloads\\Daily_progress\\Mini_Project\\VideoStoreManagmentSoln\\VideoStoreManagmentAPI\\Repositories\\FeedBackRepository.cs",
               "RelativeDocumentMoniker": "VideoStoreManagmentAPI\\Repositories\\FeedBackRepository.cs",
@@ -400,10 +624,22 @@
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-03T02:44:56.93Z"
+=======
+              "Title": "IOrderServices.cs",
+              "DocumentMoniker": "C:\\Users\\VC\\Downloads\\Daily_progress\\Mini_Project\\VideoStoreManagmentSoln\\VideoStoreManagmentAPI\\Services\\Interfaces\\IOrderServices.cs",
+              "RelativeDocumentMoniker": "VideoStoreManagmentAPI\\Services\\Interfaces\\IOrderServices.cs",
+              "ToolTip": "C:\\Users\\VC\\Downloads\\Daily_progress\\Mini_Project\\VideoStoreManagmentSoln\\VideoStoreManagmentAPI\\Services\\Interfaces\\IOrderServices.cs",
+              "RelativeToolTip": "VideoStoreManagmentAPI\\Services\\Interfaces\\IOrderServices.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAA4AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-28T06:24:07.587Z",
+              "EditorCaption": ""
+>>>>>>> bd4204c8c946b21398d905657cee916787fdeef7
             },
             {
               "$type": "Document",
               "DocumentIndex": 12,
+<<<<<<< HEAD
               "Title": "IVideoServices.cs",
               "DocumentMoniker": "C:\\Users\\VC\\Downloads\\Daily_progress\\Mini_Project\\VideoStoreManagmentSoln\\VideoStoreManagmentAPI\\Services\\Interfaces\\IVideoServices.cs",
               "RelativeDocumentMoniker": "VideoStoreManagmentAPI\\Services\\Interfaces\\IVideoServices.cs",
@@ -412,10 +648,48 @@
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-03T02:33:23.547Z"
+=======
+              "Title": "Videos.cs",
+              "DocumentMoniker": "C:\\Users\\VC\\Downloads\\Daily_progress\\Mini_Project\\VideoStoreManagmentSoln\\VideoStoreManagmentAPI\\Models\\Videos.cs",
+              "RelativeDocumentMoniker": "VideoStoreManagmentAPI\\Models\\Videos.cs",
+              "ToolTip": "C:\\Users\\VC\\Downloads\\Daily_progress\\Mini_Project\\VideoStoreManagmentSoln\\VideoStoreManagmentAPI\\Models\\Videos.cs",
+              "RelativeToolTip": "VideoStoreManagmentAPI\\Models\\Videos.cs",
+              "ViewState": "AQIAAA0AAAAAAAAAAAAkwBEAAAAHAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-28T06:44:35.188Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "OrderServices.cs",
+              "DocumentMoniker": "C:\\Users\\VC\\Downloads\\Daily_progress\\Mini_Project\\VideoStoreManagmentSoln\\VideoStoreManagmentAPI\\Services\\OrderServices.cs",
+              "RelativeDocumentMoniker": "VideoStoreManagmentAPI\\Services\\OrderServices.cs",
+              "ToolTip": "C:\\Users\\VC\\Downloads\\Daily_progress\\Mini_Project\\VideoStoreManagmentSoln\\VideoStoreManagmentAPI\\Services\\OrderServices.cs",
+              "RelativeToolTip": "VideoStoreManagmentAPI\\Services\\OrderServices.cs",
+              "ViewState": "AQIAAD8AAAAAAAAAAAAYwBAAAABEAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-28T06:11:40.754Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "OrderDetails.cs",
+              "DocumentMoniker": "C:\\Users\\VC\\Downloads\\Daily_progress\\Mini_Project\\VideoStoreManagmentSoln\\VideoStoreManagmentAPI\\Models\\OrderDetails.cs",
+              "RelativeDocumentMoniker": "VideoStoreManagmentAPI\\Models\\OrderDetails.cs",
+              "ToolTip": "C:\\Users\\VC\\Downloads\\Daily_progress\\Mini_Project\\VideoStoreManagmentSoln\\VideoStoreManagmentAPI\\Models\\OrderDetails.cs",
+              "RelativeToolTip": "VideoStoreManagmentAPI\\Models\\OrderDetails.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-28T06:10:43.864Z",
+              "EditorCaption": ""
+>>>>>>> bd4204c8c946b21398d905657cee916787fdeef7
             },
             {
               "$type": "Document",
               "DocumentIndex": 14,
+<<<<<<< HEAD
               "Title": "VideoServices.cs",
               "DocumentMoniker": "C:\\Users\\VC\\Downloads\\Daily_progress\\Mini_Project\\VideoStoreManagmentSoln\\VideoStoreManagmentAPI\\Services\\VideoServices.cs",
               "RelativeDocumentMoniker": "VideoStoreManagmentAPI\\Services\\VideoServices.cs",
@@ -428,14 +702,49 @@
             {
               "$type": "Document",
               "DocumentIndex": 18,
+=======
+              "Title": "Orders.cs",
+              "DocumentMoniker": "C:\\Users\\VC\\Downloads\\Daily_progress\\Mini_Project\\VideoStoreManagmentSoln\\VideoStoreManagmentAPI\\Models\\Orders.cs",
+              "RelativeDocumentMoniker": "VideoStoreManagmentAPI\\Models\\Orders.cs",
+              "ToolTip": "C:\\Users\\VC\\Downloads\\Daily_progress\\Mini_Project\\VideoStoreManagmentSoln\\VideoStoreManagmentAPI\\Models\\Orders.cs",
+              "RelativeToolTip": "VideoStoreManagmentAPI\\Models\\Orders.cs",
+              "ViewState": "AQIAAAoAAAAAAAAAAAAQwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-28T06:10:31.952Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\VC\\Downloads\\Daily_progress\\Mini_Project\\VideoStoreManagmentSoln\\VideoStoreManagmentAPI\\Program.cs",
+              "RelativeDocumentMoniker": "VideoStoreManagmentAPI\\Program.cs",
+              "ToolTip": "C:\\Users\\VC\\Downloads\\Daily_progress\\Mini_Project\\VideoStoreManagmentSoln\\VideoStoreManagmentAPI\\Program.cs",
+              "RelativeToolTip": "VideoStoreManagmentAPI\\Program.cs",
+              "ViewState": "AQIAAC0AAAAAAAAAAAAqwDYAAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-23T11:34:30.212Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+>>>>>>> bd4204c8c946b21398d905657cee916787fdeef7
               "Title": "VideoController.cs",
               "DocumentMoniker": "C:\\Users\\VC\\Downloads\\Daily_progress\\Mini_Project\\VideoStoreManagmentSoln\\VideoStoreManagmentAPI\\Controllers\\VideoController.cs",
               "RelativeDocumentMoniker": "VideoStoreManagmentAPI\\Controllers\\VideoController.cs",
               "ToolTip": "C:\\Users\\VC\\Downloads\\Daily_progress\\Mini_Project\\VideoStoreManagmentSoln\\VideoStoreManagmentAPI\\Controllers\\VideoController.cs",
               "RelativeToolTip": "VideoStoreManagmentAPI\\Controllers\\VideoController.cs",
+<<<<<<< HEAD
               "ViewState": "AQIAAEsAAAAAAAAAAAAcwE0AAAAQAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-28T06:03:43.154Z"
+=======
+              "ViewState": "AQIAADwAAAAAAAAAAAAowEsAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-28T06:03:43.154Z",
+              "EditorCaption": ""
+>>>>>>> bd4204c8c946b21398d905657cee916787fdeef7
             },
             {
               "$type": "Document",
@@ -445,6 +754,7 @@
               "RelativeDocumentMoniker": "VideoStoreManagmentAPI\\Models\\User.cs",
               "ToolTip": "C:\\Users\\VC\\Downloads\\Daily_progress\\Mini_Project\\VideoStoreManagmentSoln\\VideoStoreManagmentAPI\\Models\\User.cs",
               "RelativeToolTip": "VideoStoreManagmentAPI\\Models\\User.cs",
+<<<<<<< HEAD
               "ViewState": "AQIAAAwAAAAAAAAAAAAAACQAAAAVAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-31T07:16:57.248Z"
@@ -472,10 +782,17 @@
               "ViewState": "AQIAABwAAAAAAAAAAAAcwCUAAAAFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-28T06:44:35.188Z"
+=======
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAaAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-28T05:06:44.748Z",
+              "EditorCaption": ""
+>>>>>>> bd4204c8c946b21398d905657cee916787fdeef7
             },
             {
               "$type": "Document",
               "DocumentIndex": 16,
+<<<<<<< HEAD
               "Title": "VideoDTO.cs",
               "DocumentMoniker": "C:\\Users\\VC\\Downloads\\Daily_progress\\Mini_Project\\VideoStoreManagmentSoln\\VideoStoreManagmentAPI\\Models\\DTOs\\VideoDTO.cs",
               "RelativeDocumentMoniker": "VideoStoreManagmentAPI\\Models\\DTOs\\VideoDTO.cs",
@@ -728,11 +1045,14 @@
             {
               "$type": "Document",
               "DocumentIndex": 40,
+=======
+>>>>>>> bd4204c8c946b21398d905657cee916787fdeef7
               "Title": "TokenServices.cs",
               "DocumentMoniker": "C:\\Users\\VC\\Downloads\\Daily_progress\\Mini_Project\\VideoStoreManagmentSoln\\VideoStoreManagmentAPI\\Services\\TokenServices.cs",
               "RelativeDocumentMoniker": "VideoStoreManagmentAPI\\Services\\TokenServices.cs",
               "ToolTip": "C:\\Users\\VC\\Downloads\\Daily_progress\\Mini_Project\\VideoStoreManagmentSoln\\VideoStoreManagmentAPI\\Services\\TokenServices.cs",
               "RelativeToolTip": "VideoStoreManagmentAPI\\Services\\TokenServices.cs",
+<<<<<<< HEAD
               "ViewState": "AQIAAAsAAAAAAAAAAAAAwBQAAAAjAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-28T05:03:00.13Z"
@@ -764,6 +1084,68 @@
             {
               "$type": "Document",
               "DocumentIndex": 43,
+=======
+              "ViewState": "AQIAAAEAAAAAAAAAAAAmwB0AAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-28T05:03:00.13Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "PublisherLoginDTO.cs",
+              "DocumentMoniker": "C:\\Users\\VC\\Downloads\\Daily_progress\\Mini_Project\\VideoStoreManagmentSoln\\VideoStoreManagmentAPI\\Models\\DTOs\\PublisherLoginDTO.cs",
+              "RelativeDocumentMoniker": "VideoStoreManagmentAPI\\Models\\DTOs\\PublisherLoginDTO.cs",
+              "ToolTip": "C:\\Users\\VC\\Downloads\\Daily_progress\\Mini_Project\\VideoStoreManagmentSoln\\VideoStoreManagmentAPI\\Models\\DTOs\\PublisherLoginDTO.cs",
+              "RelativeToolTip": "VideoStoreManagmentAPI\\Models\\DTOs\\PublisherLoginDTO.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAeAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-27T09:59:23.826Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "PublisherRegisterDTO.cs",
+              "DocumentMoniker": "C:\\Users\\VC\\Downloads\\Daily_progress\\Mini_Project\\VideoStoreManagmentSoln\\VideoStoreManagmentAPI\\Models\\DTOs\\PublisherRegisterDTO.cs",
+              "RelativeDocumentMoniker": "VideoStoreManagmentAPI\\Models\\DTOs\\PublisherRegisterDTO.cs",
+              "ToolTip": "C:\\Users\\VC\\Downloads\\Daily_progress\\Mini_Project\\VideoStoreManagmentSoln\\VideoStoreManagmentAPI\\Models\\DTOs\\PublisherRegisterDTO.cs",
+              "RelativeToolTip": "VideoStoreManagmentAPI\\Models\\DTOs\\PublisherRegisterDTO.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-27T09:59:51.457Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "TokenService.cs",
+              "DocumentMoniker": "C:\\Users\\VC\\Downloads\\Daily_progress\\Day26\\EmployeeRequestTrackerSolution\\EmployeeRequestTrackerAPI\\Services\\TokenService.cs",
+              "RelativeDocumentMoniker": "..\\..\\Day26\\EmployeeRequestTrackerSolution\\EmployeeRequestTrackerAPI\\Services\\TokenService.cs",
+              "ToolTip": "C:\\Users\\VC\\Downloads\\Daily_progress\\Day26\\EmployeeRequestTrackerSolution\\EmployeeRequestTrackerAPI\\Services\\TokenService.cs",
+              "RelativeToolTip": "..\\..\\Day26\\EmployeeRequestTrackerSolution\\EmployeeRequestTrackerAPI\\Services\\TokenService.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAiwBQAAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-28T04:35:53.658Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "IVideoServices.cs",
+              "DocumentMoniker": "C:\\Users\\VC\\Downloads\\Daily_progress\\Mini_Project\\VideoStoreManagmentSoln\\VideoStoreManagmentAPI\\Services\\Interfaces\\IVideoServices.cs",
+              "RelativeDocumentMoniker": "VideoStoreManagmentAPI\\Services\\Interfaces\\IVideoServices.cs",
+              "ToolTip": "C:\\Users\\VC\\Downloads\\Daily_progress\\Mini_Project\\VideoStoreManagmentSoln\\VideoStoreManagmentAPI\\Services\\Interfaces\\IVideoServices.cs",
+              "RelativeToolTip": "VideoStoreManagmentAPI\\Services\\Interfaces\\IVideoServices.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAA7AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-27T04:24:22.448Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+>>>>>>> bd4204c8c946b21398d905657cee916787fdeef7
               "Title": "ITokenService.cs",
               "DocumentMoniker": "C:\\Users\\VC\\Downloads\\Daily_progress\\Mini_Project\\VideoStoreManagmentSoln\\VideoStoreManagmentAPI\\Services\\Interfaces\\ITokenService.cs",
               "RelativeDocumentMoniker": "VideoStoreManagmentAPI\\Services\\Interfaces\\ITokenService.cs",
@@ -771,6 +1153,7 @@
               "RelativeToolTip": "VideoStoreManagmentAPI\\Services\\Interfaces\\ITokenService.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+<<<<<<< HEAD
               "WhenOpened": "2024-05-28T04:40:04.505Z"
             },
             {
@@ -920,6 +1303,40 @@
             {
               "$type": "Document",
               "DocumentIndex": 56,
+=======
+              "WhenOpened": "2024-05-28T04:40:04.505Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "Publisher.cs",
+              "DocumentMoniker": "C:\\Users\\VC\\Downloads\\Daily_progress\\Mini_Project\\VideoStoreManagmentSoln\\VideoStoreManagmentAPI\\Models\\Publisher.cs",
+              "RelativeDocumentMoniker": "VideoStoreManagmentAPI\\Models\\Publisher.cs",
+              "ToolTip": "C:\\Users\\VC\\Downloads\\Daily_progress\\Mini_Project\\VideoStoreManagmentSoln\\VideoStoreManagmentAPI\\Models\\Publisher.cs",
+              "RelativeToolTip": "VideoStoreManagmentAPI\\Models\\Publisher.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAApAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-27T04:16:17.372Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "CartController.cs",
+              "DocumentMoniker": "C:\\Users\\VC\\Downloads\\Daily_progress\\Mini_Project\\VideoStoreManagmentSoln\\VideoStoreManagmentAPI\\Controllers\\CartController.cs",
+              "RelativeDocumentMoniker": "VideoStoreManagmentAPI\\Controllers\\CartController.cs",
+              "ToolTip": "C:\\Users\\VC\\Downloads\\Daily_progress\\Mini_Project\\VideoStoreManagmentSoln\\VideoStoreManagmentAPI\\Controllers\\CartController.cs",
+              "RelativeToolTip": "VideoStoreManagmentAPI\\Controllers\\CartController.cs",
+              "ViewState": "AQIAAC8AAAAAAAAAAAAYwAsAAAAQAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-27T19:19:30.255Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+>>>>>>> bd4204c8c946b21398d905657cee916787fdeef7
               "Title": "ICartServices.cs",
               "DocumentMoniker": "C:\\Users\\VC\\Downloads\\Daily_progress\\Mini_Project\\VideoStoreManagmentSoln\\VideoStoreManagmentAPI\\Services\\Interfaces\\ICartServices.cs",
               "RelativeDocumentMoniker": "VideoStoreManagmentAPI\\Services\\Interfaces\\ICartServices.cs",
@@ -928,6 +1345,33 @@
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-27T04:09:16.455Z"
+<<<<<<< HEAD
+=======
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "AuthResponseDTO.cs",
+              "DocumentMoniker": "C:\\Users\\VC\\Downloads\\Daily_progress\\Mini_Project\\VideoStoreManagmentSoln\\VideoStoreManagmentAPI\\Models\\DTOs\\AuthResponseDTO.cs",
+              "RelativeDocumentMoniker": "VideoStoreManagmentAPI\\Models\\DTOs\\AuthResponseDTO.cs",
+              "ToolTip": "C:\\Users\\VC\\Downloads\\Daily_progress\\Mini_Project\\VideoStoreManagmentSoln\\VideoStoreManagmentAPI\\Models\\DTOs\\AuthResponseDTO.cs",
+              "RelativeToolTip": "VideoStoreManagmentAPI\\Models\\DTOs\\AuthResponseDTO.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-27T09:55:51.73Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\VC\\Downloads\\Daily_progress\\Mini_Project\\VideoStoreManagmentSoln\\VideoStoreManagmentAPI\\appsettings.json",
+              "RelativeDocumentMoniker": "VideoStoreManagmentAPI\\appsettings.json",
+              "ToolTip": "C:\\Users\\VC\\Downloads\\Daily_progress\\Mini_Project\\VideoStoreManagmentSoln\\VideoStoreManagmentAPI\\appsettings.json",
+              "RelativeToolTip": "VideoStoreManagmentAPI\\appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-05-27T09:51:22.416Z"
+>>>>>>> bd4204c8c946b21398d905657cee916787fdeef7
             }
           ]
         },

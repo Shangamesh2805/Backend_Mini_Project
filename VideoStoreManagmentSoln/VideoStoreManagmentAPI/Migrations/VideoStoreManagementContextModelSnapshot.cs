@@ -153,6 +153,38 @@ namespace VideoStoreManagmentAPI.Migrations
                     b.ToTable("Orders");
                 });
 
+<<<<<<< HEAD
+=======
+            modelBuilder.Entity("VideoStoreManagmentAPI.Models.Publisher", b =>
+                {
+                    b.Property<int>("PublisherId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("PublisherId"), 1L, 1);
+
+                    b.Property<string>("PublisherName")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("PublisherId");
+
+                    b.ToTable("Publisher");
+
+                    b.HasData(
+                        new
+                        {
+                            PublisherId = 1,
+                            PublisherName = "Warner Bros"
+                        },
+                        new
+                        {
+                            PublisherId = 2,
+                            PublisherName = "20th Century Fox"
+                        });
+                });
+
+>>>>>>> bd4204c8c946b21398d905657cee916787fdeef7
             modelBuilder.Entity("VideoStoreManagmentAPI.Models.User", b =>
                 {
                     b.Property<int>("UserId")
@@ -181,6 +213,7 @@ namespace VideoStoreManagmentAPI.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
+<<<<<<< HEAD
                     b.Property<byte[]>("PasswordHash")
                         .IsRequired()
                         .HasColumnType("varbinary(max)");
@@ -199,6 +232,33 @@ namespace VideoStoreManagmentAPI.Migrations
                     b.HasKey("UserId");
 
                     b.ToTable("Users");
+=======
+                    b.HasKey("UserId");
+
+                    b.ToTable("Users");
+
+                    b.HasData(
+                        new
+                        {
+                            UserId = 1,
+                            Age = 25,
+                            DeviceLimit = 1,
+                            DiscountFactor = 0m,
+                            Email = "tojo@gmai.com",
+                            Membership = 0,
+                            Name = "Tojo"
+                        },
+                        new
+                        {
+                            UserId = 2,
+                            Age = 17,
+                            DeviceLimit = 2,
+                            DiscountFactor = 2m,
+                            Email = "tanjiro@gmail.com",
+                            Membership = 1,
+                            Name = "Tanjiro"
+                        });
+>>>>>>> bd4204c8c946b21398d905657cee916787fdeef7
                 });
 
             modelBuilder.Entity("VideoStoreManagmentAPI.Models.Videos", b =>
@@ -229,9 +289,12 @@ namespace VideoStoreManagmentAPI.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
+<<<<<<< HEAD
                     b.Property<int>("VideoCount")
                         .HasColumnType("int");
 
+=======
+>>>>>>> bd4204c8c946b21398d905657cee916787fdeef7
                     b.Property<int>("VideoFormat")
                         .HasColumnType("int");
 
@@ -240,6 +303,33 @@ namespace VideoStoreManagmentAPI.Migrations
                     b.HasIndex("PublisherId");
 
                     b.ToTable("Videos");
+<<<<<<< HEAD
+=======
+
+                    b.HasData(
+                        new
+                        {
+                            VideoId = 1,
+                            Availability = true,
+                            Description = "A mind-bending thriller",
+                            Genre = 0,
+                            Price = 9.99m,
+                            PublisherId = 1,
+                            Title = "Inception",
+                            VideoFormat = 0
+                        },
+                        new
+                        {
+                            VideoId = 2,
+                            Availability = true,
+                            Description = "A hacker discovers reality",
+                            Genre = 1,
+                            Price = 14.99m,
+                            PublisherId = 2,
+                            Title = "The Matrix",
+                            VideoFormat = 1
+                        });
+>>>>>>> bd4204c8c946b21398d905657cee916787fdeef7
                 });
 
             modelBuilder.Entity("VideoStoreManagmentAPI.Models.Cart", b =>
@@ -327,7 +417,11 @@ namespace VideoStoreManagmentAPI.Migrations
 
             modelBuilder.Entity("VideoStoreManagmentAPI.Models.Videos", b =>
                 {
+<<<<<<< HEAD
                     b.HasOne("VideoStoreManagmentAPI.Models.User", "Publisher")
+=======
+                    b.HasOne("VideoStoreManagmentAPI.Models.Publisher", "Publisher")
+>>>>>>> bd4204c8c946b21398d905657cee916787fdeef7
                         .WithMany("Videos")
                         .HasForeignKey("PublisherId")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -346,6 +440,14 @@ namespace VideoStoreManagmentAPI.Migrations
                     b.Navigation("OrderDetails");
                 });
 
+<<<<<<< HEAD
+=======
+            modelBuilder.Entity("VideoStoreManagmentAPI.Models.Publisher", b =>
+                {
+                    b.Navigation("Videos");
+                });
+
+>>>>>>> bd4204c8c946b21398d905657cee916787fdeef7
             modelBuilder.Entity("VideoStoreManagmentAPI.Models.User", b =>
                 {
                     b.Navigation("Cart")
@@ -354,8 +456,11 @@ namespace VideoStoreManagmentAPI.Migrations
                     b.Navigation("FeedBack");
 
                     b.Navigation("Orders");
+<<<<<<< HEAD
 
                     b.Navigation("Videos");
+=======
+>>>>>>> bd4204c8c946b21398d905657cee916787fdeef7
                 });
 
             modelBuilder.Entity("VideoStoreManagmentAPI.Models.Videos", b =>

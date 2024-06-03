@@ -1,6 +1,10 @@
 {
   "version": 2,
+<<<<<<< HEAD
   "dgSpecHash": "AYMeh44zrsfv1oi/Mn/VPkf+Lft52a7gAFkiUr2r4RmSg/lkeg4PnR5uVGP9tvzIgg7RZBI/xeWaEe8aeg4HLQ==",
+=======
+  "dgSpecHash": "CLxcQlSVQ2txnW91Sb/7mBxgS+AtS+r28vri+qRWPuaTk99otF+7M0luYkAinGJEZGtDWG3iVSwpwiFi2tu81A==",
+>>>>>>> bd4204c8c946b21398d905657cee916787fdeef7
   "success": true,
   "projectFilePath": "C:\\Users\\VC\\Downloads\\Daily_progress\\Mini_Project\\VideoStoreManagmentSoln\\VideoStoreManagmentAPI\\VideoStoreManagmentAPI.csproj",
   "expectedPackageFiles": [

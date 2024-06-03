@@ -1,5 +1,8 @@
 ﻿using System.ComponentModel.DataAnnotations;
+<<<<<<< HEAD
 using VideoStoreManagmentAPI.Models.DTOs;
+=======
+>>>>>>> bd4204c8c946b21398d905657cee916787fdeef7
 
 namespace VideoStoreManagmentAPI.Models
 {
@@ -20,8 +23,12 @@ namespace VideoStoreManagmentAPI.Models
         public decimal DiscountFactor { get; set; }
         public ICollection<Orders>? Orders { get; set; }
         public Cart Cart { get; set; }
+<<<<<<< HEAD
         public String Status {  get; set; }
         public ICollection<Videos> Videos { get; set; }
+=======
+
+>>>>>>> bd4204c8c946b21398d905657cee916787fdeef7
         public ICollection<FeedBack> FeedBack { get; set; }
 
 

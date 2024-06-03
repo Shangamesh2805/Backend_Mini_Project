@@ -2976,10 +2976,15 @@
       "Microsoft.EntityFrameworkCore.Design >= 6.0.30",
       "Microsoft.EntityFrameworkCore.SqlServer >= 6.0.30",
       "Microsoft.EntityFrameworkCore.Tools >= 6.0.30",
+<<<<<<< HEAD
       "Microsoft.Extensions.Logging.Log4Net.AspNetCore >= 6.1.0",
       "Microsoft.IdentityModel.Tokens >= 6.35.0",
       "Swashbuckle.AspNetCore >= 6.5.0",
       "log4net >= 2.0.17"
+=======
+      "Microsoft.IdentityModel.Tokens >= 6.35.0",
+      "Swashbuckle.AspNetCore >= 6.5.0"
+>>>>>>> bd4204c8c946b21398d905657cee916787fdeef7
     ]
   },
   "packageFolders": {
@@ -3055,10 +3060,13 @@
             "target": "Package",
             "version": "[6.0.30, )"
           },
+<<<<<<< HEAD
           "Microsoft.Extensions.Logging.Log4Net.AspNetCore": {
             "target": "Package",
             "version": "[6.1.0, )"
           },
+=======
+>>>>>>> bd4204c8c946b21398d905657cee916787fdeef7
           "Microsoft.IdentityModel.Tokens": {
             "target": "Package",
             "version": "[6.35.0, )"

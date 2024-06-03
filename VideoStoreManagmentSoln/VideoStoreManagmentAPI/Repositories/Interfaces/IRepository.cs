@@ -9,7 +9,10 @@
         public Task<T> Update(T item);
         public Task<T> GetByIdAsync(K key);
         public Task<IEnumerable<T>> GetAllAsync();
+<<<<<<< HEAD
 
+=======
+>>>>>>> bd4204c8c946b21398d905657cee916787fdeef7
         Task SaveChangesAsync();
     }
 }

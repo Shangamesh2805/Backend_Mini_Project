@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ﻿
 using System.ComponentModel.DataAnnotations;
 
@@ -19,5 +20,15 @@ namespace VideoStoreManagmentAPI.Models.DTOs
         public Role Role { get; set; } // Customer or Publisher
         public UserType Membership { get; set; }
 
+=======
+﻿namespace VideoStoreManagmentAPI.Models.DTOs
+{
+    public class UserRegisterDTO
+    {
+        public string Name { get; set; }
+        public int Age { get; set; }
+        public string Email { get; set; }
+        public string Password { get; set; } = string.Empty;
+>>>>>>> bd4204c8c946b21398d905657cee916787fdeef7
     }
 }
