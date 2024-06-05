@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ﻿using VideoStoreManagmentAPI.Models.DTOs;
 using VideoStoreManagmentAPI.Models;
 
@@ -93,5 +94,38 @@ public class CartService : ICartService
 
         cart.CartItems.Clear();
         await _cartRepository.SaveChangesAsync();
+=======
+﻿using VideoStoreManagmentAPI.Models;
+using VideoStoreManagmentAPI.Services.Interfaces;
+
+namespace VideoStoreManagmentAPI.Services
+{
+    public class CartServices : ICartServices
+    {
+        public Task<Cart> AddCartAsync(Cart cart)
+        {
+            throw new NotImplementedException();
+        }
+
+        public Task<Cart> DeleteCartAsync(int cartId)
+        {
+            throw new NotImplementedException();
+        }
+
+        public Task<IEnumerable<Cart>> GetAllCartsAsync()
+        {
+            throw new NotImplementedException();
+        }
+
+        public Task<Cart> GetCartByIdAsync(int cartId)
+        {
+            throw new NotImplementedException();
+        }
+
+        public Task<Cart> UpdateCartAsync(Cart cart)
+        {
+            throw new NotImplementedException();
+        }
+>>>>>>> 1bdab59f01efd5fb7b75e39fa560bd02c36cfa74
     }
 }

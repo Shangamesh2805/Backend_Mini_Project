@@ -1,22 +1,35 @@
 {
   "version": 2,
+<<<<<<< HEAD
   "dgSpecHash": "8BTgvA0gJT4NJ3gWUjeT0ZLtmd4B5CxzBTesuJ1RosmLQZqU4YPNgPuspxFwoaevMw145HrpM12quvKVTlw7JA==",
+=======
+  "dgSpecHash": "m4hy4YCWxZN6Ky5QF7AXzzAyYyxFCS7XdDXTRmoNpudqYzu1gjUNaBsn2ASEn9NG2p7llpNBbWSeMfAKRijlCw==",
+>>>>>>> 1bdab59f01efd5fb7b75e39fa560bd02c36cfa74
   "success": true,
   "projectFilePath": "C:\\Users\\VC\\Downloads\\Daily_progress\\Mini_Project\\VideoStoreManagmentSoln\\Testing\\Testing.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\VC\\.nuget\\packages\\coverlet.collector\\3.2.0\\coverlet.collector.3.2.0.nupkg.sha512",
     "C:\\Users\\VC\\.nuget\\packages\\log4net\\2.0.17\\log4net.2.0.17.nupkg.sha512",
+<<<<<<< HEAD
     "C:\\Users\\VC\\.nuget\\packages\\microsoft.aspnet.webapi.client\\6.0.0\\microsoft.aspnet.webapi.client.6.0.0.nupkg.sha512",
     "C:\\Users\\VC\\.nuget\\packages\\microsoft.aspnet.webapi.core\\5.3.0\\microsoft.aspnet.webapi.core.5.3.0.nupkg.sha512",
+=======
+>>>>>>> 1bdab59f01efd5fb7b75e39fa560bd02c36cfa74
     "C:\\Users\\VC\\.nuget\\packages\\microsoft.aspnetcore.authentication.jwtbearer\\6.0.30\\microsoft.aspnetcore.authentication.jwtbearer.6.0.30.nupkg.sha512",
     "C:\\Users\\VC\\.nuget\\packages\\microsoft.codecoverage\\17.5.0\\microsoft.codecoverage.17.5.0.nupkg.sha512",
     "C:\\Users\\VC\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
     "C:\\Users\\VC\\.nuget\\packages\\microsoft.data.sqlclient\\2.1.7\\microsoft.data.sqlclient.2.1.7.nupkg.sha512",
     "C:\\Users\\VC\\.nuget\\packages\\microsoft.data.sqlclient.sni.runtime\\2.1.1\\microsoft.data.sqlclient.sni.runtime.2.1.1.nupkg.sha512",
+<<<<<<< HEAD
     "C:\\Users\\VC\\.nuget\\packages\\microsoft.entityframeworkcore\\6.0.31\\microsoft.entityframeworkcore.6.0.31.nupkg.sha512",
     "C:\\Users\\VC\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\6.0.31\\microsoft.entityframeworkcore.abstractions.6.0.31.nupkg.sha512",
     "C:\\Users\\VC\\.nuget\\packages\\microsoft.entityframeworkcore.analyzers\\6.0.31\\microsoft.entityframeworkcore.analyzers.6.0.31.nupkg.sha512",
     "C:\\Users\\VC\\.nuget\\packages\\microsoft.entityframeworkcore.inmemory\\6.0.31\\microsoft.entityframeworkcore.inmemory.6.0.31.nupkg.sha512",
+=======
+    "C:\\Users\\VC\\.nuget\\packages\\microsoft.entityframeworkcore\\6.0.30\\microsoft.entityframeworkcore.6.0.30.nupkg.sha512",
+    "C:\\Users\\VC\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\6.0.30\\microsoft.entityframeworkcore.abstractions.6.0.30.nupkg.sha512",
+    "C:\\Users\\VC\\.nuget\\packages\\microsoft.entityframeworkcore.analyzers\\6.0.30\\microsoft.entityframeworkcore.analyzers.6.0.30.nupkg.sha512",
+>>>>>>> 1bdab59f01efd5fb7b75e39fa560bd02c36cfa74
     "C:\\Users\\VC\\.nuget\\packages\\microsoft.entityframeworkcore.relational\\6.0.30\\microsoft.entityframeworkcore.relational.6.0.30.nupkg.sha512",
     "C:\\Users\\VC\\.nuget\\packages\\microsoft.entityframeworkcore.sqlserver\\6.0.30\\microsoft.entityframeworkcore.sqlserver.6.0.30.nupkg.sha512",
     "C:\\Users\\VC\\.nuget\\packages\\microsoft.extensions.apidescription.server\\6.0.5\\microsoft.extensions.apidescription.server.6.0.5.nupkg.sha512",
@@ -49,7 +62,10 @@
     "C:\\Users\\VC\\.nuget\\packages\\microsoft.win32.systemevents\\4.7.0\\microsoft.win32.systemevents.4.7.0.nupkg.sha512",
     "C:\\Users\\VC\\.nuget\\packages\\netstandard.library\\2.0.0\\netstandard.library.2.0.0.nupkg.sha512",
     "C:\\Users\\VC\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512",
+<<<<<<< HEAD
     "C:\\Users\\VC\\.nuget\\packages\\newtonsoft.json.bson\\1.0.2\\newtonsoft.json.bson.1.0.2.nupkg.sha512",
+=======
+>>>>>>> 1bdab59f01efd5fb7b75e39fa560bd02c36cfa74
     "C:\\Users\\VC\\.nuget\\packages\\nuget.frameworks\\5.11.0\\nuget.frameworks.5.11.0.nupkg.sha512",
     "C:\\Users\\VC\\.nuget\\packages\\nunit\\3.13.3\\nunit.3.13.3.nupkg.sha512",
     "C:\\Users\\VC\\.nuget\\packages\\nunit.analyzers\\3.6.1\\nunit.analyzers.3.6.1.nupkg.sha512",
@@ -63,7 +79,10 @@
     "C:\\Users\\VC\\.nuget\\packages\\system.diagnostics.diagnosticsource\\6.0.1\\system.diagnostics.diagnosticsource.6.0.1.nupkg.sha512",
     "C:\\Users\\VC\\.nuget\\packages\\system.drawing.common\\4.7.0\\system.drawing.common.4.7.0.nupkg.sha512",
     "C:\\Users\\VC\\.nuget\\packages\\system.identitymodel.tokens.jwt\\6.35.0\\system.identitymodel.tokens.jwt.6.35.0.nupkg.sha512",
+<<<<<<< HEAD
     "C:\\Users\\VC\\.nuget\\packages\\system.memory\\4.5.5\\system.memory.4.5.5.nupkg.sha512",
+=======
+>>>>>>> 1bdab59f01efd5fb7b75e39fa560bd02c36cfa74
     "C:\\Users\\VC\\.nuget\\packages\\system.reflection.metadata\\1.6.0\\system.reflection.metadata.1.6.0.nupkg.sha512",
     "C:\\Users\\VC\\.nuget\\packages\\system.runtime\\4.3.0\\system.runtime.4.3.0.nupkg.sha512",
     "C:\\Users\\VC\\.nuget\\packages\\system.runtime.caching\\4.7.0\\system.runtime.caching.4.7.0.nupkg.sha512",
@@ -77,6 +96,7 @@
     "C:\\Users\\VC\\.nuget\\packages\\system.text.encoding.codepages\\4.7.0\\system.text.encoding.codepages.4.7.0.nupkg.sha512",
     "C:\\Users\\VC\\.nuget\\packages\\system.text.encodings.web\\4.7.2\\system.text.encodings.web.4.7.2.nupkg.sha512",
     "C:\\Users\\VC\\.nuget\\packages\\system.text.json\\4.7.2\\system.text.json.4.7.2.nupkg.sha512",
+<<<<<<< HEAD
     "C:\\Users\\VC\\.nuget\\packages\\system.threading.tasks.extensions\\4.5.4\\system.threading.tasks.extensions.4.5.4.nupkg.sha512",
     "C:\\Users\\VC\\.nuget\\packages\\system.windows.extensions\\4.7.0\\system.windows.extensions.4.7.0.nupkg.sha512"
   ],
@@ -92,4 +112,9 @@
       ]
     }
   ]
+=======
+    "C:\\Users\\VC\\.nuget\\packages\\system.windows.extensions\\4.7.0\\system.windows.extensions.4.7.0.nupkg.sha512"
+  ],
+  "logs": []
+>>>>>>> 1bdab59f01efd5fb7b75e39fa560bd02c36cfa74
 }

@@ -77,10 +77,19 @@
               "target": "Package",
               "version": "[6.0.30, )"
             },
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 1bdab59f01efd5fb7b75e39fa560bd02c36cfa74
             "Microsoft.Extensions.Logging.Log4Net.AspNetCore": {
               "target": "Package",
               "version": "[6.1.0, )"
             },
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> bd4204c8c946b21398d905657cee916787fdeef7
+>>>>>>> 1bdab59f01efd5fb7b75e39fa560bd02c36cfa74
             "Microsoft.IdentityModel.Tokens": {
               "target": "Package",
               "version": "[6.35.0, )"

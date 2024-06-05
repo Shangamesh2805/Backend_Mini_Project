@@ -9,7 +9,11 @@ namespace VideoStoreManagmentAPI.Controllers
 {
     [ApiController]
     [Route("api/[controller]")]
+<<<<<<< HEAD
    
+=======
+    [Authorize]
+>>>>>>> 1bdab59f01efd5fb7b75e39fa560bd02c36cfa74
     public class UserController : ControllerBase
     {
         private readonly IUserServices _userServices;
@@ -19,9 +23,13 @@ namespace VideoStoreManagmentAPI.Controllers
             _userServices = userServices;
         }
 
+<<<<<<< HEAD
         [Authorize]
         [HttpGet("{id}/User_Data")]
        
+=======
+        [HttpGet("{id}/User_Data")]
+>>>>>>> 1bdab59f01efd5fb7b75e39fa560bd02c36cfa74
         public async Task<IActionResult> GetUserById(int id)
         {
             var user = await _userServices.GetUserById(id);
@@ -32,6 +40,7 @@ namespace VideoStoreManagmentAPI.Controllers
             return Ok(user);
         }
 
+<<<<<<< HEAD
         [Authorize]
 
         [HttpPut("{id}/Update_User")]
@@ -45,11 +54,24 @@ namespace VideoStoreManagmentAPI.Controllers
 
         [Authorize]
 
+=======
+        [HttpPut("{id}/Update_User")]
+        public async Task<IActionResult> UpdateUserDetails(int id, [FromBody] UserUpdateDTO userUpdateDto)
+        {
+            await _userServices.UpdateUserDetails(id, userUpdateDto);
+            return NoContent();
+        }
+
+>>>>>>> 1bdab59f01efd5fb7b75e39fa560bd02c36cfa74
         [HttpPut("{id}/change-membership")]
         public async Task<IActionResult> ChangeMembership(int id, [FromBody] MemberShipChangeDTO membershipChangeDto)
         {
             await _userServices.ChangeMembership(id, membershipChangeDto);
+<<<<<<< HEAD
             return Ok(membershipChangeDto);
+=======
+            return NoContent();
+>>>>>>> 1bdab59f01efd5fb7b75e39fa560bd02c36cfa74
         }
     }
 }

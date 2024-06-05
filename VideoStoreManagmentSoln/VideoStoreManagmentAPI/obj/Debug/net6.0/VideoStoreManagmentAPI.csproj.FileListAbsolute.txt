@@ -69,6 +69,14 @@ C:\Users\VC\Desktop\Task1\Day29_Mini_Project\VideoStoreManagmentSoln\VideoStoreM
 C:\Users\VC\Desktop\Task1\Day29_Mini_Project\VideoStoreManagmentSoln\VideoStoreManagmentAPI\obj\Debug\net6.0\VideoStoreManagmentAPI.pdb
 C:\Users\VC\Desktop\Task1\Day29_Mini_Project\VideoStoreManagmentSoln\VideoStoreManagmentAPI\obj\Debug\net6.0\VideoStoreManagmentAPI.genruntimeconfig.cache
 C:\Users\VC\Desktop\Task1\Day29_Mini_Project\VideoStoreManagmentSoln\VideoStoreManagmentAPI\obj\Debug\net6.0\ref\VideoStoreManagmentAPI.dll
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+C:\Users\VC\Downloads\Daily_progress\Mini_Project\VideoStoreManagmentSoln\VideoStoreManagmentAPI\bin\Debug\net6.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\VC\Downloads\Daily_progress\Mini_Project\VideoStoreManagmentSoln\VideoStoreManagmentAPI\bin\Debug\net6.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+>>>>>>> bd4204c8c946b21398d905657cee916787fdeef7
+>>>>>>> 1bdab59f01efd5fb7b75e39fa560bd02c36cfa74
 C:\Users\VC\Downloads\Daily_progress\Mini_Project\VideoStoreManagmentSoln\VideoStoreManagmentAPI\bin\Debug\net6.0\appsettings.Development.json
 C:\Users\VC\Downloads\Daily_progress\Mini_Project\VideoStoreManagmentSoln\VideoStoreManagmentAPI\bin\Debug\net6.0\appsettings.json
 C:\Users\VC\Downloads\Daily_progress\Mini_Project\VideoStoreManagmentSoln\VideoStoreManagmentAPI\bin\Debug\net6.0\VideoStoreManagmentAPI.exe
@@ -109,8 +117,16 @@ C:\Users\VC\Downloads\Daily_progress\Mini_Project\VideoStoreManagmentSoln\VideoS
 C:\Users\VC\Downloads\Daily_progress\Mini_Project\VideoStoreManagmentSoln\VideoStoreManagmentAPI\bin\Debug\net6.0\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
 C:\Users\VC\Downloads\Daily_progress\Mini_Project\VideoStoreManagmentSoln\VideoStoreManagmentAPI\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
 C:\Users\VC\Downloads\Daily_progress\Mini_Project\VideoStoreManagmentSoln\VideoStoreManagmentAPI\bin\Debug\net6.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+<<<<<<< HEAD
 C:\Users\VC\Downloads\Daily_progress\Mini_Project\VideoStoreManagmentSoln\VideoStoreManagmentAPI\bin\Debug\net6.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
 C:\Users\VC\Downloads\Daily_progress\Mini_Project\VideoStoreManagmentSoln\VideoStoreManagmentAPI\bin\Debug\net6.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+=======
+<<<<<<< HEAD
+C:\Users\VC\Downloads\Daily_progress\Mini_Project\VideoStoreManagmentSoln\VideoStoreManagmentAPI\bin\Debug\net6.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\VC\Downloads\Daily_progress\Mini_Project\VideoStoreManagmentSoln\VideoStoreManagmentAPI\bin\Debug\net6.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+=======
+>>>>>>> bd4204c8c946b21398d905657cee916787fdeef7
+>>>>>>> 1bdab59f01efd5fb7b75e39fa560bd02c36cfa74
 C:\Users\VC\Downloads\Daily_progress\Mini_Project\VideoStoreManagmentSoln\VideoStoreManagmentAPI\bin\Debug\net6.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
 C:\Users\VC\Downloads\Daily_progress\Mini_Project\VideoStoreManagmentSoln\VideoStoreManagmentAPI\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\Microsoft.Win32.SystemEvents.dll
 C:\Users\VC\Downloads\Daily_progress\Mini_Project\VideoStoreManagmentSoln\VideoStoreManagmentAPI\bin\Debug\net6.0\runtimes\unix\lib\netcoreapp3.0\System.Drawing.Common.dll
@@ -140,6 +156,7 @@ C:\Users\VC\Downloads\Daily_progress\Mini_Project\VideoStoreManagmentSoln\VideoS
 C:\Users\VC\Downloads\Daily_progress\Mini_Project\VideoStoreManagmentSoln\VideoStoreManagmentAPI\obj\Debug\net6.0\VideoStoreManagmentAPI.pdb
 C:\Users\VC\Downloads\Daily_progress\Mini_Project\VideoStoreManagmentSoln\VideoStoreManagmentAPI\obj\Debug\net6.0\VideoStoreManagmentAPI.genruntimeconfig.cache
 C:\Users\VC\Downloads\Daily_progress\Mini_Project\VideoStoreManagmentSoln\VideoStoreManagmentAPI\obj\Debug\net6.0\ref\VideoStoreManagmentAPI.dll
+<<<<<<< HEAD
 C:\Users\VC\Downloads\Daily_progress\Mini_Project\VideoStoreManagmentSoln\VideoStoreManagmentAPI\bin\Debug\net6.0\log4net.config
 C:\Users\VC\Downloads\Daily_progress\Mini_Project\VideoStoreManagmentSoln\VideoStoreManagmentAPI\bin\Debug\net6.0\log4net.dll
 C:\Users\VC\Downloads\Daily_progress\Mini_Project\VideoStoreManagmentSoln\VideoStoreManagmentAPI\bin\Debug\net6.0\Microsoft.Extensions.Logging.Log4Net.AspNetCore.dll
@@ -147,3 +164,11 @@ C:\Users\VC\Downloads\Daily_progress\Mini_Project\VideoStoreManagmentSoln\VideoS
 C:\Users\VC\Downloads\Daily_progress\Mini_Project\VideoStoreManagmentSoln\VideoStoreManagmentAPI\bin\Debug\net6.0\System.Web.Http.dll
 C:\Users\VC\Downloads\Daily_progress\Mini_Project\VideoStoreManagmentSoln\VideoStoreManagmentAPI\bin\Debug\net6.0\Newtonsoft.Json.dll
 C:\Users\VC\Downloads\Daily_progress\Mini_Project\VideoStoreManagmentSoln\VideoStoreManagmentAPI\bin\Debug\net6.0\Newtonsoft.Json.Bson.dll
+=======
+<<<<<<< HEAD
+C:\Users\VC\Downloads\Daily_progress\Mini_Project\VideoStoreManagmentSoln\VideoStoreManagmentAPI\bin\Debug\net6.0\log4net.config
+C:\Users\VC\Downloads\Daily_progress\Mini_Project\VideoStoreManagmentSoln\VideoStoreManagmentAPI\bin\Debug\net6.0\log4net.dll
+C:\Users\VC\Downloads\Daily_progress\Mini_Project\VideoStoreManagmentSoln\VideoStoreManagmentAPI\bin\Debug\net6.0\Microsoft.Extensions.Logging.Log4Net.AspNetCore.dll
+=======
+>>>>>>> bd4204c8c946b21398d905657cee916787fdeef7
+>>>>>>> 1bdab59f01efd5fb7b75e39fa560bd02c36cfa74

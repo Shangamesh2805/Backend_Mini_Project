@@ -1,13 +1,24 @@
 {
   "version": 2,
+<<<<<<< HEAD
   "dgSpecHash": "hnwZYj/QDvZvorpG4SqBPdifz1LKI++2cp+NXGv+aErkRskZrARzzY1F7OThTxu5UH6UAXngZ9TFjBwYIvLiRQ==",
+=======
+<<<<<<< HEAD
+  "dgSpecHash": "AYMeh44zrsfv1oi/Mn/VPkf+Lft52a7gAFkiUr2r4RmSg/lkeg4PnR5uVGP9tvzIgg7RZBI/xeWaEe8aeg4HLQ==",
+=======
+  "dgSpecHash": "CLxcQlSVQ2txnW91Sb/7mBxgS+AtS+r28vri+qRWPuaTk99otF+7M0luYkAinGJEZGtDWG3iVSwpwiFi2tu81A==",
+>>>>>>> bd4204c8c946b21398d905657cee916787fdeef7
+>>>>>>> 1bdab59f01efd5fb7b75e39fa560bd02c36cfa74
   "success": true,
   "projectFilePath": "C:\\Users\\VC\\Downloads\\Daily_progress\\Mini_Project\\VideoStoreManagmentSoln\\VideoStoreManagmentAPI\\VideoStoreManagmentAPI.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\VC\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\VC\\.nuget\\packages\\log4net\\2.0.17\\log4net.2.0.17.nupkg.sha512",
+<<<<<<< HEAD
     "C:\\Users\\VC\\.nuget\\packages\\microsoft.aspnet.webapi.client\\6.0.0\\microsoft.aspnet.webapi.client.6.0.0.nupkg.sha512",
     "C:\\Users\\VC\\.nuget\\packages\\microsoft.aspnet.webapi.core\\5.3.0\\microsoft.aspnet.webapi.core.5.3.0.nupkg.sha512",
+=======
+>>>>>>> 1bdab59f01efd5fb7b75e39fa560bd02c36cfa74
     "C:\\Users\\VC\\.nuget\\packages\\microsoft.aspnetcore.authentication.jwtbearer\\6.0.30\\microsoft.aspnetcore.authentication.jwtbearer.6.0.30.nupkg.sha512",
     "C:\\Users\\VC\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
     "C:\\Users\\VC\\.nuget\\packages\\microsoft.data.sqlclient\\2.1.7\\microsoft.data.sqlclient.2.1.7.nupkg.sha512",

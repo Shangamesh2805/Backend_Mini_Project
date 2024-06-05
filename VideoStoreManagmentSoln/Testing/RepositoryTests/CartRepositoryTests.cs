@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ﻿using Microsoft.EntityFrameworkCore;
 using NUnit.Framework;
 using System;
@@ -146,5 +147,17 @@ namespace VideoStoreManagmentAPI.Test.Repositories
             // Assert
             Assert.NotNull(result);
         }
+=======
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Testing.RepositoryTests
+{
+    internal class CartRepositoryTests
+    {
+>>>>>>> 1bdab59f01efd5fb7b75e39fa560bd02c36cfa74
     }
 }

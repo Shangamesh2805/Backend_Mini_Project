@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ﻿using Microsoft.EntityFrameworkCore;
 using NUnit.Framework;
 using System;
@@ -212,5 +213,17 @@ namespace VideoStoreManagmentAPI.Test.Repositories
             // Act & Assert
             Assert.ThrowsAsync<NoVideoWithGivenVideoIDException>(async () => await repository.DeleteVideo(999));
         }
+=======
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Testing.RepositoryTests
+{
+    internal class VideoRepositoryTest
+    {
+>>>>>>> 1bdab59f01efd5fb7b75e39fa560bd02c36cfa74
     }
 }

@@ -17,6 +17,7 @@ namespace VideoStoreManagmentAPI.Repositories
 
         public async Task<OrderDetails> AddAsync(OrderDetails item)
         {
+<<<<<<< HEAD
             try
             {
                 _context.OrderDetails.Add(item);
@@ -27,6 +28,11 @@ namespace VideoStoreManagmentAPI.Repositories
             {
                 throw new Exception("Coudln't Add Orderitem ", ex);
             }
+=======
+            _context.OrderDetails.Add(item);
+            await _context.SaveChangesAsync();
+            return item;
+>>>>>>> 1bdab59f01efd5fb7b75e39fa560bd02c36cfa74
         }
 
     
@@ -40,7 +46,11 @@ namespace VideoStoreManagmentAPI.Repositories
                 await _context.SaveChangesAsync();
                 return item;
             }
+<<<<<<< HEAD
             throw new NoOrderDetailFoundException();
+=======
+            throw new OrderDetailFoundException();
+>>>>>>> 1bdab59f01efd5fb7b75e39fa560bd02c36cfa74
         }
 
         public async Task<IEnumerable<OrderDetails>> GetAllAsync()
@@ -50,6 +60,7 @@ namespace VideoStoreManagmentAPI.Repositories
 
         public async Task<OrderDetails> GetByIdAsync(int key)
         {
+<<<<<<< HEAD
             try
             {
                 return await _context.OrderDetails.FindAsync(key);
@@ -58,6 +69,9 @@ namespace VideoStoreManagmentAPI.Repositories
             {
                 throw new Exception("Couldn't get OrderDetails", ex);
             }
+=======
+            return await _context.OrderDetails.FindAsync(key);
+>>>>>>> 1bdab59f01efd5fb7b75e39fa560bd02c36cfa74
         }
 
         public async Task SaveChangesAsync()
@@ -72,17 +86,24 @@ namespace VideoStoreManagmentAPI.Repositories
             var existingOrderDetail = await GetByIdAsync(item.OrderDetailId);
             if (existingOrderDetail == null)
             {
+<<<<<<< HEAD
                 throw new NoOrderDetailFoundException();
+=======
+                throw new OrderDetailFoundException();
+>>>>>>> 1bdab59f01efd5fb7b75e39fa560bd02c36cfa74
             }
 
             _context.Entry(existingOrderDetail).CurrentValues.SetValues(item);
             await _context.SaveChangesAsync();
             return existingOrderDetail;
         }
+<<<<<<< HEAD
 
         async Task<int> IRepository<int, OrderDetails>.SaveChangesAsync()
         {
             return await _context.SaveChangesAsync(); 
         }
+=======
+>>>>>>> 1bdab59f01efd5fb7b75e39fa560bd02c36cfa74
     }
 }
