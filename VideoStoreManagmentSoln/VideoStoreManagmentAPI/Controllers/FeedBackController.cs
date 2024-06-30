@@ -1,9 +1,9 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using VideoStoreManagmentAPI.Exceptions;
-using VideoStoreManagmentAPI.Models.DTOs;
 using VideoStoreManagmentAPI.Models;
 using VideoStoreManagmentAPI.Services.Interfaces;
+using VideoStoreManagmentAPI.Models.DTOs.FeedBackDTOs;
 
 namespace VideoStoreManagmentAPI.Controllers
 {

@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.Threading.Tasks;
 using VideoStoreManagmentAPI.Models;
-using VideoStoreManagmentAPI.Models.DTOs;
+using VideoStoreManagmentAPI.Models.DTOs.VideoDTOs;
 
 namespace VideoStoreManagmentAPI.Repositories.Interfaces
 {

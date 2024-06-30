@@ -3,7 +3,7 @@ using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
 using VideoStoreManagmentAPI.Models;
-using VideoStoreManagmentAPI.Models.DTOs;
+using VideoStoreManagmentAPI.Models.DTOs.AuthDTOs;
 using VideoStoreManagmentAPI.Repositories.Interfaces;
 using VideoStoreManagmentAPI.Services.Interfaces;
 

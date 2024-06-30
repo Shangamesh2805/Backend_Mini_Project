@@ -30,6 +30,12 @@ namespace VideoStoreManagmentAPI.Services
             }
         }
 
+        /// <summary>
+        /// Retrieves all feedbacks.
+        /// </summary>
+        /// <returns>A list of feedbacks.</returns>
+        /// <exception cref="ServiceException">Thrown when an error occurs while getting all feedbacks.</exception>
+
         public async Task AddFeedback(FeedBack feedback)
         {
             try
@@ -42,7 +48,12 @@ namespace VideoStoreManagmentAPI.Services
             }
         }
 
-       
+        /// <summary>
+        /// Adds a new feedback.
+        /// </summary>
+        /// <param name="feedback">The feedback to add.</param>
+        /// <exception cref="ServiceException">Thrown when an error occurs while adding feedback.</exception>
+
         public async Task DeleteFeedback(int id)
         {
             try
@@ -55,6 +66,13 @@ namespace VideoStoreManagmentAPI.Services
             }
         }
 
-        
+        /// <summary>
+        /// Deletes a feedback by its ID.
+        /// </summary>
+        /// <param name="id">The ID of the feedback to delete.</param>
+        /// <exception cref="ServiceException">Thrown when an error occurs while deleting feedback.</exception>
+
+
+
     }
 }

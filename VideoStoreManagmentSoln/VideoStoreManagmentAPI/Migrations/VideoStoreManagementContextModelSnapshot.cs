@@ -64,23 +64,17 @@ namespace VideoStoreManagmentAPI.Migrations
                     b.Property<int>("VideoId")
                         .HasColumnType("int");
 
-<<<<<<< HEAD
                     b.Property<int?>("VideosVideoId")
                         .HasColumnType("int");
 
-=======
->>>>>>> 1bdab59f01efd5fb7b75e39fa560bd02c36cfa74
                     b.HasKey("CartItemId");
 
                     b.HasIndex("CartId");
 
                     b.HasIndex("VideoId");
 
-<<<<<<< HEAD
                     b.HasIndex("VideosVideoId");
 
-=======
->>>>>>> 1bdab59f01efd5fb7b75e39fa560bd02c36cfa74
                     b.ToTable("CartItems");
                 });
 
@@ -148,8 +142,15 @@ namespace VideoStoreManagmentAPI.Migrations
                     b.Property<DateTime>("OrderDate")
                         .HasColumnType("datetime2");
 
+                    b.Property<int?>("PaymentId")
+                        .HasColumnType("int");
+
                     b.Property<DateTime>("RentalExpireDate")
                         .HasColumnType("datetime2");
+
+                    b.Property<string>("Status")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<decimal>("TotalAmount")
                         .HasColumnType("decimal(18,2)");
@@ -164,41 +165,35 @@ namespace VideoStoreManagmentAPI.Migrations
                     b.ToTable("Orders");
                 });
 
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-            modelBuilder.Entity("VideoStoreManagmentAPI.Models.Publisher", b =>
+            modelBuilder.Entity("VideoStoreManagmentAPI.Models.Payment", b =>
                 {
-                    b.Property<int>("PublisherId")
+                    b.Property<int>("PaymentId")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("PublisherId"), 1L, 1);
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("PaymentId"), 1L, 1);
 
-                    b.Property<string>("PublisherName")
+                    b.Property<decimal>("Amount")
+                        .HasColumnType("decimal(18,2)");
+
+                    b.Property<int>("OrderId")
+                        .HasColumnType("int");
+
+                    b.Property<DateTime>("PaymentDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("Status")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.HasKey("PublisherId");
+                    b.HasKey("PaymentId");
 
-                    b.ToTable("Publisher");
+                    b.HasIndex("OrderId")
+                        .IsUnique();
 
-                    b.HasData(
-                        new
-                        {
-                            PublisherId = 1,
-                            PublisherName = "Warner Bros"
-                        },
-                        new
-                        {
-                            PublisherId = 2,
-                            PublisherName = "20th Century Fox"
-                        });
+                    b.ToTable("Payments");
                 });
 
->>>>>>> bd4204c8c946b21398d905657cee916787fdeef7
->>>>>>> 1bdab59f01efd5fb7b75e39fa560bd02c36cfa74
             modelBuilder.Entity("VideoStoreManagmentAPI.Models.User", b =>
                 {
                     b.Property<int>("UserId")
@@ -227,10 +222,6 @@ namespace VideoStoreManagmentAPI.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> 1bdab59f01efd5fb7b75e39fa560bd02c36cfa74
                     b.Property<byte[]>("PasswordHash")
                         .IsRequired()
                         .HasColumnType("varbinary(max)");
@@ -249,36 +240,6 @@ namespace VideoStoreManagmentAPI.Migrations
                     b.HasKey("UserId");
 
                     b.ToTable("Users");
-<<<<<<< HEAD
-=======
-=======
-                    b.HasKey("UserId");
-
-                    b.ToTable("Users");
-
-                    b.HasData(
-                        new
-                        {
-                            UserId = 1,
-                            Age = 25,
-                            DeviceLimit = 1,
-                            DiscountFactor = 0m,
-                            Email = "tojo@gmai.com",
-                            Membership = 0,
-                            Name = "Tojo"
-                        },
-                        new
-                        {
-                            UserId = 2,
-                            Age = 17,
-                            DeviceLimit = 2,
-                            DiscountFactor = 2m,
-                            Email = "tanjiro@gmail.com",
-                            Membership = 1,
-                            Name = "Tanjiro"
-                        });
->>>>>>> bd4204c8c946b21398d905657cee916787fdeef7
->>>>>>> 1bdab59f01efd5fb7b75e39fa560bd02c36cfa74
                 });
 
             modelBuilder.Entity("VideoStoreManagmentAPI.Models.Videos", b =>
@@ -309,18 +270,9 @@ namespace VideoStoreManagmentAPI.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-<<<<<<< HEAD
                     b.Property<int>("VideoCount")
                         .HasColumnType("int");
 
-=======
-<<<<<<< HEAD
-                    b.Property<int>("VideoCount")
-                        .HasColumnType("int");
-
-=======
->>>>>>> bd4204c8c946b21398d905657cee916787fdeef7
->>>>>>> 1bdab59f01efd5fb7b75e39fa560bd02c36cfa74
                     b.Property<int>("VideoFormat")
                         .HasColumnType("int");
 
@@ -329,36 +281,6 @@ namespace VideoStoreManagmentAPI.Migrations
                     b.HasIndex("PublisherId");
 
                     b.ToTable("Videos");
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-
-                    b.HasData(
-                        new
-                        {
-                            VideoId = 1,
-                            Availability = true,
-                            Description = "A mind-bending thriller",
-                            Genre = 0,
-                            Price = 9.99m,
-                            PublisherId = 1,
-                            Title = "Inception",
-                            VideoFormat = 0
-                        },
-                        new
-                        {
-                            VideoId = 2,
-                            Availability = true,
-                            Description = "A hacker discovers reality",
-                            Genre = 1,
-                            Price = 14.99m,
-                            PublisherId = 2,
-                            Title = "The Matrix",
-                            VideoFormat = 1
-                        });
->>>>>>> bd4204c8c946b21398d905657cee916787fdeef7
->>>>>>> 1bdab59f01efd5fb7b75e39fa560bd02c36cfa74
                 });
 
             modelBuilder.Entity("VideoStoreManagmentAPI.Models.Cart", b =>
@@ -390,13 +312,10 @@ namespace VideoStoreManagmentAPI.Migrations
                         .OnDelete(DeleteBehavior.Restrict)
                         .IsRequired();
 
-<<<<<<< HEAD
                     b.HasOne("VideoStoreManagmentAPI.Models.Videos", null)
                         .WithMany("CartItems")
                         .HasForeignKey("VideosVideoId");
 
-=======
->>>>>>> 1bdab59f01efd5fb7b75e39fa560bd02c36cfa74
                     b.Navigation("Cart");
 
                     b.Navigation("Video");
@@ -451,17 +370,20 @@ namespace VideoStoreManagmentAPI.Migrations
                     b.Navigation("User");
                 });
 
+            modelBuilder.Entity("VideoStoreManagmentAPI.Models.Payment", b =>
+                {
+                    b.HasOne("VideoStoreManagmentAPI.Models.Orders", "Order")
+                        .WithOne("Payment")
+                        .HasForeignKey("VideoStoreManagmentAPI.Models.Payment", "OrderId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Order");
+                });
+
             modelBuilder.Entity("VideoStoreManagmentAPI.Models.Videos", b =>
                 {
-<<<<<<< HEAD
                     b.HasOne("VideoStoreManagmentAPI.Models.User", "Publisher")
-=======
-<<<<<<< HEAD
-                    b.HasOne("VideoStoreManagmentAPI.Models.User", "Publisher")
-=======
-                    b.HasOne("VideoStoreManagmentAPI.Models.Publisher", "Publisher")
->>>>>>> bd4204c8c946b21398d905657cee916787fdeef7
->>>>>>> 1bdab59f01efd5fb7b75e39fa560bd02c36cfa74
                         .WithMany("Videos")
                         .HasForeignKey("PublisherId")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -478,19 +400,11 @@ namespace VideoStoreManagmentAPI.Migrations
             modelBuilder.Entity("VideoStoreManagmentAPI.Models.Orders", b =>
                 {
                     b.Navigation("OrderDetails");
+
+                    b.Navigation("Payment")
+                        .IsRequired();
                 });
 
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-            modelBuilder.Entity("VideoStoreManagmentAPI.Models.Publisher", b =>
-                {
-                    b.Navigation("Videos");
-                });
-
->>>>>>> bd4204c8c946b21398d905657cee916787fdeef7
->>>>>>> 1bdab59f01efd5fb7b75e39fa560bd02c36cfa74
             modelBuilder.Entity("VideoStoreManagmentAPI.Models.User", b =>
                 {
                     b.Navigation("Cart")
@@ -499,25 +413,14 @@ namespace VideoStoreManagmentAPI.Migrations
                     b.Navigation("FeedBack");
 
                     b.Navigation("Orders");
-<<<<<<< HEAD
 
                     b.Navigation("Videos");
-=======
-<<<<<<< HEAD
-
-                    b.Navigation("Videos");
-=======
->>>>>>> bd4204c8c946b21398d905657cee916787fdeef7
->>>>>>> 1bdab59f01efd5fb7b75e39fa560bd02c36cfa74
                 });
 
             modelBuilder.Entity("VideoStoreManagmentAPI.Models.Videos", b =>
                 {
-<<<<<<< HEAD
                     b.Navigation("CartItems");
 
-=======
->>>>>>> 1bdab59f01efd5fb7b75e39fa560bd02c36cfa74
                     b.Navigation("Feedbacks");
 
                     b.Navigation("OrderDetails");

@@ -1,31 +1,14 @@
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> 1bdab59f01efd5fb7b75e39fa560bd02c36cfa74
 ﻿using System.Threading.Tasks;
 using VideoStoreManagmentAPI.Interfaces;
 using VideoStoreManagmentAPI.Models;
-using VideoStoreManagmentAPI.Models.DTOs;
+using VideoStoreManagmentAPI.Models.DTOs.UserDTOs;
 using VideoStoreManagmentAPI.Repositories.Interfaces;
 using VideoStoreManagmentAPI.Services.Interfaces;
-<<<<<<< HEAD
-=======
-=======
-﻿using Microsoft.EntityFrameworkCore;
-using VideoStoreManagmentAPI.Contexts;
-using VideoStoreManagmentAPI.Interfaces;
-using VideoStoreManagmentAPI.Models;
->>>>>>> bd4204c8c946b21398d905657cee916787fdeef7
->>>>>>> 1bdab59f01efd5fb7b75e39fa560bd02c36cfa74
 
 namespace VideoStoreManagmentAPI.Services
 {
     public class UserService : IUserServices
     {
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> 1bdab59f01efd5fb7b75e39fa560bd02c36cfa74
         private readonly IUserRepository _userRepository;
 
         public UserService(IUserRepository userRepository)
@@ -37,40 +20,39 @@ namespace VideoStoreManagmentAPI.Services
         {
             return await _userRepository.GetUserById(id);
         }
-<<<<<<< HEAD
-        
-        public async Task<User> UpdateUserDetails(int userId, UserUpdateDTO userUpdateDto)
-=======
 
-        public async Task UpdateUserDetails(int userId, UserUpdateDTO userUpdateDto)
->>>>>>> 1bdab59f01efd5fb7b75e39fa560bd02c36cfa74
+        /// <summary>
+        /// Retrieves a user by their ID.
+        /// </summary>
+        /// <param name="id">The ID of the user.</param>
+        /// <returns>The user with the specified ID.</returns>
+
+        public async Task<User> UpdateUserDetails(int userId, UserUpdateDTO userUpdateDto)
         {
             var user = await _userRepository.GetUserById(userId);
             if (user == null)
                 throw new KeyNotFoundException("User not found");
 
-<<<<<<< HEAD
             
-=======
-            // Update user properties
->>>>>>> 1bdab59f01efd5fb7b75e39fa560bd02c36cfa74
             user.Name = userUpdateDto.Name;
             user.Email = userUpdateDto.Email;
             user.Age = userUpdateDto.Age;
             
 
-<<<<<<< HEAD
             
             return await _userRepository.UpdateUser(user);
         }
 
-        public async Task<User> ChangeMembership(int userId, MemberShipChangeDTO membershipChangeDto)
-=======
-            await _userRepository.UpdateUser(user);
-        }
+        /// <summary>
+        /// Updates the details of a user.
+        /// </summary>
+        /// <param name="userId">The ID of the user.</param>
+        /// <param name="userUpdateDto">The user details to update.</param>
+        /// <returns>The updated user.</returns>
+        /// <exception cref="KeyNotFoundException">Thrown when the user is not found.</exception>
 
-        public async Task ChangeMembership(int userId, MemberShipChangeDTO membershipChangeDto)
->>>>>>> 1bdab59f01efd5fb7b75e39fa560bd02c36cfa74
+
+        public async Task<User> ChangeMembership(int userId, MemberShipChangeDTO membershipChangeDto)
         {
             var user = await _userRepository.GetUserById(userId);
             if (user == null)
@@ -78,78 +60,16 @@ namespace VideoStoreManagmentAPI.Services
 
             user.Role = membershipChangeDto.NewRole;
             user.Membership = membershipChangeDto.NewMembershipType;
-<<<<<<< HEAD
             return await _userRepository.UpdateUser(user);
             
         }
-=======
-            await _userRepository.UpdateUser(user);
-        }
-=======
-        private readonly VideoStoreManagementContext _context;
+        /// <summary>
+        /// Changes the membership details of a user.
+        /// </summary>
+        /// <param name="userId">The ID of the user.</param>
+        /// <param name="membershipChangeDto">The new membership details.</param>
+        /// <returns>The updated user with changed membership.</returns>
+        /// <exception cref="KeyNotFoundException">Thrown when the user is not found.</exception>
 
-        public UserService(VideoStoreManagementContext context)
-        {
-            _context = context;
-        }
-
-        public async Task<IEnumerable<Videos>> GetAvailableVideosAsync()
-        {
-            return await _context.Videos.Where(v => v.Availability).ToListAsync();
-        }
-
-        public async Task<Orders> PlaceOrderAsync(int userId, int cartId)
-        {
-            var user = await _context.Users.FindAsync(userId);
-            if (user == null) throw new KeyNotFoundException("User not found");
-
-            var cart = await _context.Carts.Include(c => c.CartItems).ThenInclude(ci => ci.Video).FirstOrDefaultAsync(c => c.UserId == userId && c.CartId == cartId);
-            if (cart == null) throw new KeyNotFoundException("Cart not found");
-
-            if (!cart.CartItems.Any()) throw new InvalidOperationException("Cart is empty");
-
-            var order = new Orders
-            {
-                UserId = userId,
-                OrderDate = DateTime.Now,
-                TotalAmount = cart.CartItems.Sum(ci => ci.Video.Price * (1 - user.DiscountFactor / 100.0)),
-                OrderDetails = cart.CartItems.Select(ci => new OrderDetails { VideoId = ci.VideoId }).ToList()
-            };
-
-            _context.Orders.Add(order);
-            _context.CartItems.RemoveRange(cart.CartItems);  // Clear the cart items after placing the order
-
-            foreach (var item in cart.CartItems)
-            {
-                var video = await _context.Videos.FindAsync(item.VideoId);
-                if (video != null)
-                {
-                    video.VideoCount -= 1;
-                    if (video.VideoCount == 0) video.Availability = false;
-                }
-            }
-
-            await _context.SaveChangesAsync();
-            return order;
-        }
-
-        public async Task<IEnumerable<Orders>> GetUserOrdersAsync(int userId)
-        {
-            return await _context.Orders.Include(o => o.OrderDetails).ThenInclude(od => od.Video).Where(o => o.UserId == userId).ToListAsync();
-        }
-
-        public async Task<Cart> GetUserCartAsync(int userId)
-        {
-            return await _context.Carts.Include(c => c.CartItems).ThenInclude(ci => ci.Video).FirstOrDefaultAsync(c => c.UserId == userId);
-        }
-
-        Task<Orders> IUserServices.PlaceOrderAsync(int userId, int cartId)
-        {
-            throw new NotImplementedException();
-        }
-
-       
->>>>>>> bd4204c8c946b21398d905657cee916787fdeef7
->>>>>>> 1bdab59f01efd5fb7b75e39fa560bd02c36cfa74
     }
 }

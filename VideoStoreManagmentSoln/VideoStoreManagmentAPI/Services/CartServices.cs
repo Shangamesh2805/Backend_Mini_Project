@@ -1,6 +1,6 @@
-<<<<<<< HEAD
 ﻿using VideoStoreManagmentAPI.Models.DTOs;
 using VideoStoreManagmentAPI.Models;
+using VideoStoreManagmentAPI.Models.DTOs.CartDTOs;
 
 public class CartService : ICartService
 {
@@ -32,6 +32,12 @@ public class CartService : ICartService
         };
         return cartDto;
     }
+
+    /// <summary>
+    /// Retrieves a cart for a specific user.
+    /// </summary>
+    /// <param name="userId">The ID of the user.</param>
+    /// <returns>The cart details as a <see cref="CartDTO"/></returns>
 
     public async Task AddCartItemAsync(int userId, AddCartItemDTO addCartItemDto)
     {
@@ -66,6 +72,12 @@ public class CartService : ICartService
         await _cartRepository.SaveChangesAsync();
     }
 
+    /// <summary>
+    /// Adds an item to the cart for a specific user.
+    /// </summary>
+    /// <param name="userId">The ID of the user.</param>
+    /// <param name="addCartItemDto">The details of the item to add.</param>
+
     public async Task RemoveCartItemAsync(int userId, int itemId)
     {
         var cart = await _cartRepository.GetCartAsync(userId);
@@ -84,6 +96,12 @@ public class CartService : ICartService
         await _cartRepository.SaveChangesAsync();
     }
 
+    /// <summary>
+    /// Removes an item from the cart for a specific user.
+    /// </summary>
+    /// <param name="userId">The ID of the user.</param>
+    /// <param name="itemId">The ID of the item to remove.</param>
+
     public async Task ClearCartAsync(int userId)
     {
         var cart = await _cartRepository.GetCartAsync(userId);
@@ -94,38 +112,10 @@ public class CartService : ICartService
 
         cart.CartItems.Clear();
         await _cartRepository.SaveChangesAsync();
-=======
-﻿using VideoStoreManagmentAPI.Models;
-using VideoStoreManagmentAPI.Services.Interfaces;
-
-namespace VideoStoreManagmentAPI.Services
-{
-    public class CartServices : ICartServices
-    {
-        public Task<Cart> AddCartAsync(Cart cart)
-        {
-            throw new NotImplementedException();
-        }
-
-        public Task<Cart> DeleteCartAsync(int cartId)
-        {
-            throw new NotImplementedException();
-        }
-
-        public Task<IEnumerable<Cart>> GetAllCartsAsync()
-        {
-            throw new NotImplementedException();
-        }
-
-        public Task<Cart> GetCartByIdAsync(int cartId)
-        {
-            throw new NotImplementedException();
-        }
-
-        public Task<Cart> UpdateCartAsync(Cart cart)
-        {
-            throw new NotImplementedException();
-        }
->>>>>>> 1bdab59f01efd5fb7b75e39fa560bd02c36cfa74
     }
+
+    /// <summary>
+    /// Clears all items from the cart for a specific user.
+    /// </summary>
+    /// <param name="userId">The ID of the user.</param>
 }

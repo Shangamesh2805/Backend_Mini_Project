@@ -6,7 +6,7 @@ namespace VideoStoreManagmentAPI.Exceptions
 {
     [Serializable]
 
-    internal class NoPublisherWithGivenIDException : Exception
+    public class NoPublisherWithGivenIDException : Exception
     {
         string msg;
         public NoPublisherWithGivenIDException()

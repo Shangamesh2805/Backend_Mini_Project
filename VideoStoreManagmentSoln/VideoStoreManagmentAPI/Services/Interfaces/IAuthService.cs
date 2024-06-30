@@ -1,4 +1,4 @@
-﻿using VideoStoreManagmentAPI.Models.DTOs;
+﻿using VideoStoreManagmentAPI.Models.DTOs.AuthDTOs;
 
 namespace VideoStoreManagmentAPI.Services.Interfaces
 {

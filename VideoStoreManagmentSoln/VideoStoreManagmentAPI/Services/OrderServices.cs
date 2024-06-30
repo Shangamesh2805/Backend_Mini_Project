@@ -1,6 +1,12 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
 using VideoStoreManagmentAPI.Contexts;
+using VideoStoreManagmentAPI.DTOs;
 using VideoStoreManagmentAPI.Models;
+using VideoStoreManagmentAPI.Models.DTOs.OrderDTOs;
 using VideoStoreManagmentAPI.Services.Interfaces;
 
 namespace VideoStoreManagmentAPI.Services
@@ -14,7 +20,7 @@ namespace VideoStoreManagmentAPI.Services
             _context = context;
         }
 
-        public async Task<Orders> PlaceOrderFromCartAsync(int userId)
+        public async Task<OrderDTO> PlaceOrderFromCartAsync(int userId, decimal paymentAmount)
         {
             var user = await _context.Users.FindAsync(userId);
             if (user == null)
@@ -58,7 +64,8 @@ namespace VideoStoreManagmentAPI.Services
                 UserId = userId,
                 TotalAmount = totalAmount,
                 OrderDate = DateTime.UtcNow,
-                RentalExpireDate = DateTime.UtcNow.AddDays(7)
+                RentalExpireDate = DateTime.UtcNow.AddDays(7),
+                Status = "Pending"
             };
 
             _context.Orders.Add(order);
@@ -75,22 +82,66 @@ namespace VideoStoreManagmentAPI.Services
                 _context.OrderDetails.Add(orderDetail);
             }
 
-            // Clear the cart
             _context.CartItems.RemoveRange(cart.CartItems);
             await _context.SaveChangesAsync();
 
-            return order;
+            var orderDTO = new OrderDTO
+            {
+                OrderId = order.OrderId,
+                UserId = userId,
+                TotalAmount = totalAmount,
+                OrderDate = order.OrderDate,
+                RentalExpireDate = order.RentalExpireDate,
+                Status = order.Status,
+                OrderDetails = videos.Select(v => new OrderDetailDTO { VideoId = v.VideoId }).ToList()
+            };
+
+            return orderDTO;
         }
 
-        public async Task<IEnumerable<Orders>> GetOrdersByUserIdAsync(int userId)
+        public async Task<IEnumerable<OrderDTO>> GetOrdersByUserIdAsync(int userId)
         {
-            return await _context.Orders.Where(o => o.UserId == userId).ToListAsync();
+            var orders = await _context.Orders
+                                       .Where(o => o.UserId == userId)
+                                       .Include(o => o.OrderDetails)
+                                       .ToListAsync();
+
+            var orderDTOs = orders.Select(order => new OrderDTO
+            {
+                OrderId = order.OrderId,
+                UserId = order.UserId,
+                TotalAmount = order.TotalAmount,
+                OrderDate = order.OrderDate,
+                RentalExpireDate = order.RentalExpireDate,
+                Status = order.Status,
+                OrderDetails = order.OrderDetails.Select(od => new OrderDetailDTO { VideoId = od.VideoId }).ToList()
+            });
+
+            return orderDTOs;
         }
 
-        
+        public async Task<OrderDTO> GetOrderByIdAsync(int orderId)
+        {
+            var order = await _context.Orders
+                .Include(o => o.OrderDetails)
+                .FirstOrDefaultAsync(o => o.OrderId == orderId);
+
+            if (order == null)
+            {
+                throw new Exception("Order not found");
+            }
+
+            var orderDTO = new OrderDTO
+            {
+                OrderId = order.OrderId,
+                UserId = order.UserId,
+                TotalAmount = order.TotalAmount,
+                OrderDate = order.OrderDate,
+                RentalExpireDate = order.RentalExpireDate,
+                Status = order.Status,
+                OrderDetails = order.OrderDetails.Select(od => new OrderDetailDTO { VideoId = od.VideoId }).ToList()
+            };
+            return orderDTO;
+        }
     }
-
-        
 }
-    
-

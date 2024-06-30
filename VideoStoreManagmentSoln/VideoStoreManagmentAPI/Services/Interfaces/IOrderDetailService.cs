@@ -1,9 +1,10 @@
 ﻿using VideoStoreManagmentAPI.Models;
+using VideoStoreManagmentAPI.Models.DTOs.OrderDTOs;
 
 namespace VideoStoreManagmentAPI.Services.Interfaces
 {
     public interface IOrderDetailService
     {
-        Task<IEnumerable<OrderDetails>> GetOrderDetailsByOrderIdAsync(int orderId);
+        Task<IEnumerable<OrderDetailDTO>> GetOrderDetailsByOrderIdAsync(int orderId);
     }
 }

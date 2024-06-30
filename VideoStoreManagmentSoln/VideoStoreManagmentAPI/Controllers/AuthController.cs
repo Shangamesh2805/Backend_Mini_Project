@@ -1,6 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using System.Threading.Tasks;
-using VideoStoreManagmentAPI.Models.DTOs;
+using VideoStoreManagmentAPI.Models.DTOs.AuthDTOs;
 using VideoStoreManagmentAPI.Services.Interfaces;
 
 namespace VideoStoreManagmentAPI.Controllers
@@ -14,6 +14,7 @@ namespace VideoStoreManagmentAPI.Controllers
         public AuthController(IAuthService authService)
         {
             _authService = authService;
+
         }
 
         [HttpPost("register")]

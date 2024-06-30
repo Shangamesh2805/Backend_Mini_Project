@@ -16,7 +16,6 @@ namespace VideoStoreManagmentAPI.Repositories
 
         public async Task<CartItem> AddAsync(CartItem item)
         {
-<<<<<<< HEAD
             try
             {
                 _context.CartItems.Add(item);
@@ -27,11 +26,6 @@ namespace VideoStoreManagmentAPI.Repositories
             {
                 throw new Exception("Couldn't Add Car Item ",ex);
             }
-=======
-            _context.CartItems.Add(item);
-            await _context.SaveChangesAsync();
-            return item;
->>>>>>> 1bdab59f01efd5fb7b75e39fa560bd02c36cfa74
         }
 
      
@@ -68,11 +62,7 @@ namespace VideoStoreManagmentAPI.Repositories
             throw new NoCartItemWithGivenIDException();
         }
 
-<<<<<<< HEAD
         public Task<int> SaveChangesAsync()
-=======
-        public Task SaveChangesAsync()
->>>>>>> 1bdab59f01efd5fb7b75e39fa560bd02c36cfa74
         {
             return _context.SaveChangesAsync();
         }

@@ -10,6 +10,7 @@ namespace VideoStoreManagmentAPI.Models
         public decimal Rating { get; set; }
 
         public string Comments {  get; set; }
+
         [ForeignKey("UserId")]
         public int UserId { get; set; }
         public User User { get; set; }

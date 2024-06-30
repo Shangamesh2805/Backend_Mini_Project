@@ -1,6 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using VideoStoreManagmentAPI.Contexts;
-using VideoStoreManagmentAPI.Models;
+using VideoStoreManagmentAPI.Models.DTOs.OrderDTOs;
 using VideoStoreManagmentAPI.Services.Interfaces;
 
 namespace VideoStoreManagmentAPI.Services
@@ -14,9 +14,24 @@ namespace VideoStoreManagmentAPI.Services
             _context = context;
         }
 
-        public async Task<IEnumerable<OrderDetails>> GetOrderDetailsByOrderIdAsync(int orderId)
+        public async Task<IEnumerable<OrderDetailDTO>> GetOrderDetailsByOrderIdAsync(int orderId)
         {
-            return await _context.OrderDetails.Where(od => od.OrderId == orderId).ToListAsync();
+            var orderDetails = await _context.OrderDetails
+                                             .Where(od => od.OrderId == orderId)
+                                             .ToListAsync();
+
+            var orderDetailDTOs = orderDetails.Select(od => new OrderDetailDTO
+            {
+                VideoId = od.VideoId
+            });
+
+            return orderDetailDTOs;
         }
     }
 }
+
+/// <summary>
+/// Retrieves order details by order ID.
+/// </summary>
+/// <param name="orderId">The ID of the order.</param>
+/// <returns>A list of order details.</returns>

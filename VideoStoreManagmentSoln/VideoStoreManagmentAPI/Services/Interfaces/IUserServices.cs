@@ -1,12 +1,5 @@
 ﻿using VideoStoreManagmentAPI.Models;
-<<<<<<< HEAD
-using VideoStoreManagmentAPI.Models.DTOs;
-=======
-<<<<<<< HEAD
-using VideoStoreManagmentAPI.Models.DTOs;
-=======
->>>>>>> bd4204c8c946b21398d905657cee916787fdeef7
->>>>>>> 1bdab59f01efd5fb7b75e39fa560bd02c36cfa74
+using VideoStoreManagmentAPI.Models.DTOs.UserDTOs;
 
 namespace VideoStoreManagmentAPI.Interfaces
 {
@@ -19,23 +12,9 @@ namespace VideoStoreManagmentAPI.Interfaces
         //Task<Orders> PlaceOrderAsync(int userId);
         //Task<IEnumerable<Orders>> GetUserOrdersAsync(int userId);
 
-<<<<<<< HEAD
         Task<User> GetUserById(int id);
         Task<User> UpdateUserDetails(int userId, UserUpdateDTO userUpdateDto);
         Task<User> ChangeMembership(int userId, MemberShipChangeDTO membershipChangeDto);
 
-=======
-<<<<<<< HEAD
-        Task<User> GetUserById(int id);
-        Task UpdateUserDetails(int userId, UserUpdateDTO userUpdateDto);
-        Task ChangeMembership(int userId, MemberShipChangeDTO membershipChangeDto);
-
-=======
-        Task<IEnumerable<Videos>> GetAvailableVideosAsync();
-        Task<Orders> PlaceOrderAsync(int userId, int cartId);
-        Task<IEnumerable<Orders>> GetUserOrdersAsync(int userId);
-        Task<Cart> GetUserCartAsync(int userId);
->>>>>>> bd4204c8c946b21398d905657cee916787fdeef7
->>>>>>> 1bdab59f01efd5fb7b75e39fa560bd02c36cfa74
     }
 }

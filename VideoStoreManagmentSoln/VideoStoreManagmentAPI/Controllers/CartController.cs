@@ -1,8 +1,7 @@
-<<<<<<< HEAD
 ﻿using Microsoft.AspNetCore.Mvc;
 using System.Security.Claims;
-using VideoStoreManagmentAPI.Models.DTOs;
 using VideoStoreManagmentAPI.Models;
+using VideoStoreManagmentAPI.Models.DTOs.CartDTOs;
 
 [ApiController]
 [Route("api/[controller]")]
@@ -15,7 +14,7 @@ public class CartController : ControllerBase
         _cartService = cartService;
     }
 
-    [HttpGet]
+    [HttpGet("/GetCart")]
     public async Task<ActionResult<CartDTO>> GetCart()
     {
         var userId = GetUserId();
@@ -29,7 +28,7 @@ public class CartController : ControllerBase
         return Ok(cartDto);
     }
 
-    [HttpPost("items")]
+    [HttpPost("/AddCartitems")]
     public async Task<ActionResult> AddCartItem(AddCartItemDTO addCartItemDto)
     {
         var userId = GetUserId();
@@ -37,7 +36,7 @@ public class CartController : ControllerBase
         return Ok();
     }
 
-    [HttpDelete("items/{itemId}")]
+    [HttpDelete("Removeitems/{itemId}")]
     public async Task<ActionResult> RemoveCartItem(int itemId)
     {
         var userId = GetUserId();
@@ -45,7 +44,7 @@ public class CartController : ControllerBase
         return Ok();
     }
 
-    [HttpDelete("items")]
+    [HttpDelete("ClearCart")]
     public async Task<ActionResult> ClearCart()
     {
         var userId = GetUserId();
@@ -64,57 +63,4 @@ public class CartController : ControllerBase
         return int.Parse(nameIdentifierClaim.Value);
     }
 
-=======
-﻿using Microsoft.AspNetCore.Authorization;
-using Microsoft.AspNetCore.Mvc;
-
-using VideoStoreManagmentAPI.Models;
-using VideoStoreManagmentAPI.Services;
-using VideoStoreManagmentAPI.Services.Interfaces;
-
-namespace VideoStoreManagmentAPI.Controllers
-{
-    [Route("api/[controller]")]
-    [ApiController]
-    [Authorize] 
-    public class CartController : ControllerBase
-    {
-        private readonly ICartServices _cartService;
-
-        public CartController(CartServices cartService)
-        {
-            _cartService = cartService;
-        }
-
-        [HttpGet]
-        public async Task<IActionResult> GetAllCarts()
-        {
-            var carts = await _cartService.GetAllCartsAsync();
-            return Ok(carts);
-        }
-
-        [HttpGet("{id}")]
-        public async Task<IActionResult> GetCartById(int id)
-        {
-            var cart = await _cartService.GetCartByIdAsync(id);
-            if (cart == null) return NotFound();
-            return Ok(cart);
-        }
-
-        [HttpPost]
-        public async Task<IActionResult> AddCart([FromBody] Cart cart)
-        {
-            var newCart = await _cartService.AddCartAsync(cart);
-            return CreatedAtAction(nameof(GetCartById), new { id = newCart.CartId }, newCart);
-        }
-
-        [HttpDelete("{id}")]
-        public async Task<IActionResult> DeleteCart(int id)
-        {
-            var cart = await _cartService.DeleteCartAsync(id);
-            if (cart == null) return NotFound();
-            return Ok(cart);
-        }
-    }
->>>>>>> 1bdab59f01efd5fb7b75e39fa560bd02c36cfa74
 }

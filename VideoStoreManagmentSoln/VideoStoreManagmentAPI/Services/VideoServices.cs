@@ -1,35 +1,17 @@
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> 1bdab59f01efd5fb7b75e39fa560bd02c36cfa74
 ﻿using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 using VideoStoreManagmentAPI.Exceptions;
 using VideoStoreManagmentAPI.Models;
-using VideoStoreManagmentAPI.Models.DTOs;
+using VideoStoreManagmentAPI.Models.DTOs.VideoDTOs;
 using VideoStoreManagmentAPI.Repositories;
 using VideoStoreManagmentAPI.Repositories.Interfaces;
 using VideoStoreManagmentAPI.Services.Interfaces;
-<<<<<<< HEAD
-=======
-=======
-﻿using Microsoft.EntityFrameworkCore;
-using Microsoft.EntityFrameworkCore.Metadata.Internal;
-using VideoStoreManagmentAPI.Exceptions;
-using VideoStoreManagmentAPI.Models;
-using VideoStoreManagmentAPI.Repositories.Interfaces;
->>>>>>> bd4204c8c946b21398d905657cee916787fdeef7
->>>>>>> 1bdab59f01efd5fb7b75e39fa560bd02c36cfa74
 
 namespace VideoStoreManagmentAPI.Services
 {
     public class VideoService : IVideoService
     {
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> 1bdab59f01efd5fb7b75e39fa560bd02c36cfa74
         private readonly IVideoRepository _videoRepository;
         private readonly IUserRepository _userRepository;
         public VideoService(IVideoRepository videoRepository, IUserRepository userRepository)
@@ -50,6 +32,13 @@ namespace VideoStoreManagmentAPI.Services
             }
         }
 
+        /// <summary>
+        /// Retrieves all videos.
+        /// </summary>
+        /// <returns>A list of videos.</returns>
+        /// <exception cref="ServiceException">Thrown when an error occurs while getting all videos.</exception>
+
+
         public async Task<Videos> GetVideoById(int id)
         {
             try
@@ -61,6 +50,14 @@ namespace VideoStoreManagmentAPI.Services
                 throw new ServiceException("Error occurred while getting video by Id", ex);
             }
         }
+
+        /// <summary>
+        /// Retrieves a video by its ID.
+        /// </summary>
+        /// <param name="id">The ID of the video.</param>
+        /// <returns>The video with the specified ID.</returns>
+        /// <exception cref="ServiceException">Thrown when an error occurs while getting the video by ID.</exception>
+
 
         public async Task AddVideo(VideoDTO videoDto, int publisherId)
         {
@@ -78,6 +75,15 @@ namespace VideoStoreManagmentAPI.Services
             }
         }
 
+        /// <summary>
+        /// Adds a new video.
+        /// </summary>
+        /// <param name="videoDto">The video data transfer object.</param>
+        /// <param name="publisherId">The ID of the publisher.</param>
+        /// <exception cref="ServiceAccessException">Thrown when the user is not a publisher.</exception>
+        /// <exception cref="ServiceException">Thrown when an error occurs while adding the video.</exception>
+
+
         public async Task UpdateVideo(int id, VideoDTO videoDto)
         {
 
@@ -90,6 +96,14 @@ namespace VideoStoreManagmentAPI.Services
                 throw new ServiceException("Error occurred while updating video", ex);
             }
         }
+        /// <summary>
+        /// Updates an existing video.
+        /// </summary>
+        /// <param name="id">The ID of the video to update.</param>
+        /// <param name="videoDto">The video data transfer object.</param>
+        /// <exception cref="ServiceException">Thrown when an error occurs while updating the video.</exception>
+
+
 
         public async Task DeleteVideo(int id)
         {
@@ -102,75 +116,23 @@ namespace VideoStoreManagmentAPI.Services
                 throw new ServiceException("Error occurred while deleting video", ex);
             }
         }
+        /// <summary>
+        /// Deletes a video by its ID.
+        /// </summary>
+        /// <param name="id">The ID of the video to delete.</param>
+        /// <exception cref="ServiceException">Thrown when an error occurs while deleting the video.</exception>
+
         private async Task<bool> IsUserPublisher(int userId)
         {
             var user = await _userRepository.GetUserById(userId);
             return user != null && user.Role == Role.Publisher;
         }
+
+        /// <summary>
+        /// Checks if the user is a publisher.
+        /// </summary>
+        /// <param name="userId">The ID of the user.</param>
+        /// <returns>True if the user is a publisher; otherwise, false.</returns>
     }
 
-<<<<<<< HEAD
-=======
-=======
-        private readonly IRepository<int, Videos> _videoRepository;
-
-        public VideoService(IRepository<int, Videos> videoRepository)
-        {
-            _videoRepository = videoRepository;
-        }
-
-        public async Task<IEnumerable<Videos>> GetAllVideosAsync()
-        {
-            return await _videoRepository.GetAllAsync();
-        }
-
-        public async Task<Videos> GetVideoByIdAsync(int id)
-        {
-            var video = await _videoRepository.GetByIdAsync(id);
-            if (video != null)
-            {
-                return video;
-            }
-            throw new VideoNotFoundException();
-        }
-
-        public async Task<Videos> AddVideoAsync(Videos video)
-        {
-            return await _videoRepository.AddAsync(video);
-        }
-
-        public async Task<Videos> DeleteVideoAsync(int id)
-        {
-            var item = await _videoRepository.GetByIdAsync(id);
-            if (item != null)
-            {
-                _videoRepository.Delete(id);
-                await _videoRepository.SaveChangesAsync();
-                return item;
-            }
-            throw new VideoNotFoundException() ;
-        }
-
-        public async Task<Videos> UpdateVideoAsync(int id, Videos video)
-        {
-            var existingVideo = await _videoRepository.GetByIdAsync(id);
-            if (existingVideo == null)
-            {
-                throw new VideoNotFoundException();
-            }
-
-            existingVideo.Title = video.Title;
-            existingVideo.Genre = video.Genre;
-            existingVideo.VideoFormat = video.VideoFormat;
-            existingVideo.Price = video.Price;
-            existingVideo.Availability = video.Availability;
-            existingVideo.Description = video.Description;
-            existingVideo.PublisherId = video.PublisherId;
-
-            await _videoRepository.SaveChangesAsync();
-            return existingVideo;
-        }
-    }
->>>>>>> bd4204c8c946b21398d905657cee916787fdeef7
->>>>>>> 1bdab59f01efd5fb7b75e39fa560bd02c36cfa74
 }

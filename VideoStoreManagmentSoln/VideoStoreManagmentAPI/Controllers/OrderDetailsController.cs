@@ -16,7 +16,7 @@ namespace VideoStoreManagmentAPI.Controllers
             _orderDetailsService = orderDetailsService;
         }
 
-        [HttpGet("{orderId}")]
+        [HttpGet("GetOrderDetails/{orderId}")]
         public async Task<IActionResult> GetOrderDetailsByOrderId(int orderId)
         {
             try

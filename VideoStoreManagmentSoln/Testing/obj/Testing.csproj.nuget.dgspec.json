@@ -53,13 +53,10 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
-<<<<<<< HEAD
             "Microsoft.EntityFrameworkCore.InMemory": {
               "target": "Package",
               "version": "[6.0.31, )"
             },
-=======
->>>>>>> 1bdab59f01efd5fb7b75e39fa560bd02c36cfa74
             "Microsoft.NET.Test.Sdk": {
               "target": "Package",
               "version": "[17.5.0, )"
@@ -146,16 +143,17 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
-<<<<<<< HEAD
             "Microsoft.AspNet.WebApi.Core": {
               "target": "Package",
               "version": "[5.3.0, )"
             },
-=======
->>>>>>> 1bdab59f01efd5fb7b75e39fa560bd02c36cfa74
             "Microsoft.AspNetCore.Authentication.JwtBearer": {
               "target": "Package",
               "version": "[6.0.30, )"
+            },
+            "Microsoft.AspNetCore.Cors": {
+              "target": "Package",
+              "version": "[2.2.0, )"
             },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
