@@ -44,15 +44,22 @@ namespace VideoStoreManagmentAPI.Services
             return _tokenService.GenerateToken(user);
         }
 
-        public async Task<string> Login(UserLoginDTO loginDto)
+        public async Task<LoginReturnDTO> Login(UserLoginDTO loginDto)
         {
             var user = await _userRepository.Login(loginDto.Email, loginDto.Password);
             if (user == null)
                 throw new Exception("Invalid credentials");
 
-            return _tokenService.GenerateToken(user);
-        }
+            var token = _tokenService.GenerateToken(user);
 
+            return new LoginReturnDTO
+            {
+                UserId = user.UserId,
+                Token = token,
+                Role = user.Role
+            };
+        }
+        
         private byte[] GenerateSalt()
         {
             using var hmac = new HMACSHA512();
@@ -64,5 +71,7 @@ namespace VideoStoreManagmentAPI.Services
             using var hmac = new HMACSHA512(salt);
             return hmac.ComputeHash(Encoding.UTF8.GetBytes(password));
         }
+
+       
     }
 }

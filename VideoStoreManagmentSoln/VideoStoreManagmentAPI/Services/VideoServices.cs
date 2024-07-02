@@ -20,18 +20,22 @@ namespace VideoStoreManagmentAPI.Services
             _userRepository = userRepository;
         }
 
-        public async Task<List<Videos>> GetAllVideos()
+        public async Task<List<VideoDTO>> GetAllVideos()
         {
-            try
+            var videos = await _videoRepository.GetAllVideos();
+            return videos.Select(video => new VideoDTO
             {
-                return await _videoRepository.GetAllVideos();
-            }
-            catch (Exception ex)
-            {
-                throw new ServiceException("Error occurred while getting all videos", ex);
-            }
+                VideoId = video.VideoId,
+                Title = video.Title,
+                Description = video.Description,
+                Genre = video.Genre,
+                Availability = video.Availability,
+                VideoFormat = video.VideoFormat,
+                Price = video.Price,
+                VideoCount = video.VideoCount,
+                PublisherId = video.PublisherId
+            }).ToList();
         }
-
         /// <summary>
         /// Retrieves all videos.
         /// </summary>
@@ -39,16 +43,22 @@ namespace VideoStoreManagmentAPI.Services
         /// <exception cref="ServiceException">Thrown when an error occurs while getting all videos.</exception>
 
 
-        public async Task<Videos> GetVideoById(int id)
+        public async Task<VideoDTO> GetVideoById(int id)
         {
-            try
+            var video = await _videoRepository.GetVideoById(id);
+            if (video == null) return null;
+            return new VideoDTO
             {
-                return await _videoRepository.GetVideoById(id);
-            }
-            catch (Exception ex)
-            {
-                throw new ServiceException("Error occurred while getting video by Id", ex);
-            }
+                VideoId = video.VideoId,
+                Title = video.Title,
+                Description = video.Description,
+                Genre = video.Genre,
+                Availability = video.Availability,
+                VideoFormat = video.VideoFormat,
+                Price = video.Price,
+                VideoCount = video.VideoCount,
+                PublisherId = video.PublisherId
+            };
         }
 
         /// <summary>

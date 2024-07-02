@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using System.Threading.Tasks;
+using VideoStoreManagmentAPI.Models;
 using VideoStoreManagmentAPI.Models.DTOs.AuthDTOs;
 using VideoStoreManagmentAPI.Services.Interfaces;
 
@@ -36,13 +37,14 @@ namespace VideoStoreManagmentAPI.Controllers
         {
             try
             {
-                var token = await _authService.Login(loginDto);
-                return Ok(new { token });
+                var loginResult = await _authService.Login(loginDto);
+                return Ok(loginResult);
             }
             catch (Exception ex)
             {
                 return Unauthorized(ex.Message);
             }
         }
+    
     }
 }

@@ -7,8 +7,8 @@ namespace VideoStoreManagmentAPI.Services
     public interface IVideoService
     {
 
-        Task<List<Videos>> GetAllVideos();
-        Task<Videos> GetVideoById(int id);
+        Task<List<VideoDTO>> GetAllVideos();
+        Task<VideoDTO> GetVideoById(int id);
         Task AddVideo(VideoDTO videoDto, int publisherId);
         Task UpdateVideo(int id, VideoDTO videoDto);
         Task DeleteVideo(int id);

@@ -25,17 +25,29 @@ namespace VideoStoreManagmentAPI.Controllers
         }
 
         // Accessible by all users
-        [Authorize]
+        [AllowAnonymous]
         [HttpGet("Get_AllVideos")]
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status500InternalServerError)]
-        
-        public async Task<ActionResult<IEnumerable<Videos>>> GetAll()
+        public async Task<ActionResult<IEnumerable<VideoDTO>>> GetAll()
         {
             try
             {
                 var videos = await _videoService.GetAllVideos();
-                return Ok(videos);
+                var videoDTOs = videos.Select(video => new VideoDTO
+                {
+                    VideoId = video.VideoId,
+                    Title = video.Title,
+                    Description = video.Description,
+                    Genre = video.Genre,
+                    Availability = video.Availability,
+                    VideoFormat = video.VideoFormat,
+                    Price = video.Price,
+                    VideoCount = video.VideoCount,
+                    PublisherId = video.PublisherId
+                }).ToList();
+
+                return Ok(videoDTOs);
             }
             catch (ServiceException ex)
             {
